@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { MomentModule } from '@ccmos/nestjs-moment';
 import { UserModule } from './user/user.module';
 import { HelperModule } from './helpers/helper.module';
+import { MajorModule } from './major/major.module';
 
 @Module({
   imports: [
@@ -18,7 +19,8 @@ import { HelperModule } from './helpers/helper.module';
     AuthModule,
     HelperModule,
     PrismaModule,
-    UserModule
+    UserModule,
+    MajorModule
   ],
   controllers: [],
   providers: [],
