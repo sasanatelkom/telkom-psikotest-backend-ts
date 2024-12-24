@@ -8,6 +8,7 @@ import { MomentModule } from '@ccmos/nestjs-moment';
 import { ConfigModule } from '@nestjs/config';
 import { AuthRepository } from './auth.repository';
 import { UserModule } from 'src/user/user.module';
+import { HelperModule } from 'src/helpers/helper.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { UserModule } from 'src/user/user.module';
     JwtModule.register({}),
     MomentModule,
     ConfigModule,
+    HelperModule,
     UserModule
   ],
   controllers: [AuthController],

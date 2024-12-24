@@ -14,10 +14,14 @@ import { AuthService } from './auth.service';
 import { JwtGuard } from './guard';
 import { LoginUserDto } from './dto/login-user.dto';
 import { Request } from 'express'
+import { HttpHelper } from 'src/helpers/http.helper';
+import { Validation } from 'src/helpers/validation.helper';
 @Controller('auth')
 export class AuthController {
   constructor(
     private authService: AuthService,
+    private readonly httpHelper: HttpHelper,
+    private readonly validation: Validation,
   ) { }
 
   /*
@@ -25,15 +29,6 @@ export class AuthController {
   | Auth Participant enpoint
   |--------------------------------------------------------------------------
   */
-  @Post('login')
-  async login(@Body() dto: LoginUserDto, @Res() res) {
-    {
-      const token = await this.authService.login(dto);
-      return res
-        .status(HttpStatus.OK)
-        .json(token);
-    }
-  }
 
 
   /*
@@ -41,6 +36,17 @@ export class AuthController {
     | Auth User enpoint
     |--------------------------------------------------------------------------
     */
+  @Post('user/login')
+  async login(@Body() dto: LoginUserDto, @Res() res) {
+    {
+      try {
+        const result = await this.authService.login(dto);
+        return this.httpHelper.formatResponse(res, HttpStatus.OK, result);
+      } catch (error) {
+        this.validation.errorHandler(res, error);
+      }
+    }
+  }
 
 
   /*

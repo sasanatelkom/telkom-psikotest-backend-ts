@@ -34,13 +34,27 @@ export class UserController {
     @UseGuards(JwtGuard, RoleGuard)
     @Roles(TypeRoleUser.SUPERADMIN)
     @Post()
-    async createUserAdmin(
+    async createUser(
         @Body() dto: CreateUserDto,
         @Res() res: Response,
     ) {
         try {
             await this.userService.createUser(dto);
             return this.httpHelper.formatResponse(res, HttpStatus.CREATED, null);
+        } catch (error) {
+            this.validation.errorHandler(res, error);
+        }
+    }
+
+    @UseGuards(JwtGuard, RoleGuard)
+    @Roles(TypeRoleUser.SUPERADMIN)
+    @Get()
+    async getAllUser(
+        @Res() res: Response,
+    ) {
+        try {
+            const result = await this.userService.getAllUser();
+            return this.httpHelper.formatResponse(res, HttpStatus.OK, result);
         } catch (error) {
             this.validation.errorHandler(res, error);
         }
@@ -101,7 +115,7 @@ export class UserController {
     ) {
         try {
             await this.userService.deleteUser(id);
-            return this.httpHelper.formatResponse(res, HttpStatus.NO_CONTENT, null);
+            return this.httpHelper.formatResponse(res, HttpStatus.OK, null);
         } catch (error) {
             this.validation.errorHandler(res, error);
         }

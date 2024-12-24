@@ -16,6 +16,10 @@ export class UserService {
         return await this.userRepository.getThrowUserByUsername(username);
     }
 
+    async getAllUser() {
+        return await this.userRepository.getAllUser()
+    }
+
     async createUser(dto: CreateUserDto) {
         return await this.userRepository.createUser(dto);
     }

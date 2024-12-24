@@ -24,6 +24,10 @@ export class UserRepository {
         return user;
     }
 
+    async getAllUser() {
+        return await this.userQuery.findAllWithoutPassword();
+    }
+
     async checkIsAlreadyUsername(username: string) {
         const user = await this.userQuery.findByUsername(username);
         if (user) throw new CustomError('username sudah digunakan', 400);
@@ -31,14 +35,24 @@ export class UserRepository {
     }
 
     async createUser(dto: CreateUserDto) {
-        await this.checkIsAlreadyUsername(dto.username);
+        // Normalize the username: lowercase and remove spaces
+        const normalizedUsername = dto.username.toLowerCase().replace(/\s+/g, '');
 
-        // hashing password from body dto
+        // Check if the normalized username already exists
+        await this.checkIsAlreadyUsername(normalizedUsername);
+
+        // Hashing password from body dto
         const salt = await bcrypt.genSalt();
         const hash = await bcrypt.hash(dto.password, salt);
         dto.password = hash;
+
+        // Set the normalized username in the dto
+        dto.username = normalizedUsername;
+
+        // Create the user
         return await this.userQuery.create(dto);
     }
+
 
     async updateUser(id: string, dto: UpdateUserDto) {
         const user = await this.getThrowUserById(id);
