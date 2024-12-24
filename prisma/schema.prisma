@@ -45,3 +45,12 @@ model Participant {
 
   @@index([id, email])
 }
+
+model Major {
+  id   String  @id @default(uuid())
+  name String
+  url  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
