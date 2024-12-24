@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { forwardRef, Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { MomentModule } from '@ccmos/nestjs-moment';
 import { ConfigModule } from '@nestjs/config';
@@ -6,6 +6,8 @@ import { PrismaModule } from '../prisma/prisma.module';
 import { UserService } from './user.service';
 import { UserRepository } from './user.repository';
 import { UserController } from './user.controller';
+import { HelperModule } from 'src/helpers/helper.module';
+import { AuthModule } from 'src/auth/auth.module';
 
 @Module({
     imports: [
@@ -13,6 +15,8 @@ import { UserController } from './user.controller';
         JwtModule.register({}),
         MomentModule,
         ConfigModule,
+        HelperModule,
+        forwardRef(() => AuthModule),
     ],
     providers: [UserService, UserRepository],
     controllers: [UserController],

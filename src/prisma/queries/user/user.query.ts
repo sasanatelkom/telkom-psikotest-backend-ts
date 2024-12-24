@@ -39,4 +39,8 @@ export class UserQuery extends DbService {
     async update(id: string, data: IUpdateUser) {
         return await this.prisma.user.update({ where: { id }, data })
     }
+
+    async delete(id: string) {
+        return await this.prisma.user.delete({ where: { id } })
+    }
 }

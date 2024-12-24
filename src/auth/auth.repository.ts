@@ -1,13 +1,11 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
 import { PayloadToken } from './type';
-import { PrismaService } from '../prisma/prisma.service';
 import { LoginUserDto } from './dto/login-user.dto';
-import { UserQuery } from '../prisma/queries/user/user.query';
-import { TypeRoleUser } from '@prisma/client';
 import { UserRepository } from 'src/user/user.repository';
+import { CustomError } from 'utils/error/custom-error';
 @Injectable()
 export class AuthRepository {
     constructor(
@@ -28,7 +26,7 @@ export class AuthRepository {
             const validPassword = await bcrypt.compare(dto.password, user.password);
 
             if (!validPassword) {
-                throw new BadRequestException('Password salah');
+                throw new CustomError('Password salah', 400);
             }
 
             return await this.signJwtToken(
@@ -85,7 +83,7 @@ export class AuthRepository {
         const decodedJwt = await this.decodeJwtToken(accessToken);
         // check valid token
         if (!decodedJwt) {
-            throw new BadRequestException('Invalid token');
+            throw new CustomError('Invalid token', 401);
         }
 
         await this.userRepository.getThrowUserById(decodedJwt.sub);
