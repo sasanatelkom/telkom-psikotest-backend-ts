@@ -7,6 +7,7 @@ import { MomentModule } from '@ccmos/nestjs-moment';
 import { UserModule } from './user/user.module';
 import { HelperModule } from './helpers/helper.module';
 import { MajorModule } from './major/major.module';
+import { FieldWorkModule } from './field-work/field-work.module';
 
 @Module({
   imports: [
@@ -20,7 +21,8 @@ import { MajorModule } from './major/major.module';
     HelperModule,
     PrismaModule,
     UserModule,
-    MajorModule
+    MajorModule,
+    FieldWorkModule
   ],
   controllers: [],
   providers: [],

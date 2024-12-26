@@ -12,11 +12,9 @@ export class MajorQuery extends DbService {
         });
     }
 
-
     async findAll() {
         return await this.prisma.major.findMany()
     }
-
 
     async update(id: string, data: IUpdateMajor) {
         return await this.prisma.major.update({ where: { id }, data })
