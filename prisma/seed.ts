@@ -1,6 +1,8 @@
 import { PrismaClient } from '@prisma/client'
 import { IMajor } from './interfaces/major.interface'
 import { majorData } from './datas/major.data'
+import { IFieldWork } from './interfaces/field-work.interface'
+import { fieldWorkData } from './datas/field-work.data'
 
 const prisma = new PrismaClient()
 
@@ -21,11 +23,27 @@ async function seedMajor(data: IMajor[]) {
     return
 }
 
-
+async function seedFieldWork(data: IFieldWork[]) {
+    if (data.length > 0) {
+        const fieldWorks = []
+        for (const d of data) {
+            // get data from d variable
+            const { name } = d
+            // check if data exist
+            const isExist = await prisma.fieldWork.findFirst({ where: { name } })
+            if (isExist) continue
+            fieldWorks.push(d)
+        }
+        await prisma.fieldWork.createMany({ data: fieldWorks })
+        console.log(`successfully seed the Field Works ${fieldWorks.length} datas.`)
+    }
+    return
+}
 
 async function main() {
     // running seeders
     seedMajor(majorData)
+    seedFieldWork(fieldWorkData)
 }
 
 main()

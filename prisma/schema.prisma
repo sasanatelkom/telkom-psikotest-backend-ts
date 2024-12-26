@@ -18,6 +18,14 @@ enum TypeRoleUser {
   SUPERADMIN
 }
 
+enum TypeOrientation {
+  DATA_HUMAN
+  DATA_TECHNOLOGY
+  IDEAS_HUMAN
+  IDEAS_TECHNOLOGY
+  HUMAN_TECHNOLOGY
+}
+
 model User {
   id       String       @id @default(uuid())
   name     String
@@ -33,15 +41,17 @@ model User {
 }
 
 model Participant {
-  id          String @id @default(uuid())
+  id          String          @id @default(uuid())
   name        String
-  email       String @unique
+  email       String          @unique
   phoneNumber String
   schoolName  String
   class       String
+  orientation TypeOrientation
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt              DateTime                 @default(now())
+  updatedAt              DateTime                 @updatedAt
+  participantOnFieldWork ParticipantOnFieldWork[]
 
   @@index([id, email])
 }
@@ -53,4 +63,25 @@ model Major {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model FieldWork {
+  id   String @id @default(uuid())
+  name String
+
+  createdAt              DateTime                 @default(now())
+  updatedAt              DateTime                 @updatedAt
+  participantOnFieldWork ParticipantOnFieldWork[]
+}
+
+model ParticipantOnFieldWork {
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  idParticipant String
+  participant   Participant @relation(fields: [idParticipant], references: [id], onDelete: Cascade)
+  idFieldWork   String
+  fieldWork     FieldWork   @relation(fields: [idFieldWork], references: [id], onDelete: Cascade)
+
+  @@id([idParticipant, idFieldWork])
 }
