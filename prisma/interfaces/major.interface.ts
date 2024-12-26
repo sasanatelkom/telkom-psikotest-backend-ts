@@ -1,4 +1,6 @@
 export interface IMajor {
     name: string;
-    url?: string
+    degree: string;
+    code: string;
+    url?: string;
 }

@@ -5,10 +5,11 @@ import { DbService } from './db.service';
 import { UserQuery } from './queries/user/user.query';
 import { MajorQuery } from './queries/major/major.query';
 import { FieldWorkQuery } from './queries/field-work/field-work.query';
+import { ParticipantQuery } from './queries/participant/participant.query';
 
 @Module({
   imports: [ConfigModule],
-  providers: [DbService, PrismaService, UserQuery, MajorQuery, FieldWorkQuery],
-  exports: [PrismaService, DbService, UserQuery, MajorQuery, FieldWorkQuery],
+  providers: [DbService, PrismaService, UserQuery, MajorQuery, FieldWorkQuery, ParticipantQuery],
+  exports: [PrismaService, DbService, UserQuery, MajorQuery, FieldWorkQuery, ParticipantQuery],
 })
 export class PrismaModule { }

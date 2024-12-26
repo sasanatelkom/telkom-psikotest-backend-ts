@@ -8,6 +8,7 @@ import { UserModule } from './user/user.module';
 import { HelperModule } from './helpers/helper.module';
 import { MajorModule } from './major/major.module';
 import { FieldWorkModule } from './field-work/field-work.module';
+import { ParticipantModule } from './participant/participant.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { FieldWorkModule } from './field-work/field-work.module';
     PrismaModule,
     UserModule,
     MajorModule,
-    FieldWorkModule
+    FieldWorkModule,
+    ParticipantModule
   ],
   controllers: [],
   providers: [],

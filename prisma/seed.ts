@@ -11,9 +11,9 @@ async function seedMajor(data: IMajor[]) {
         const majors = []
         for (const d of data) {
             // get data from d variable
-            const { name } = d
+            const { code } = d
             // check if data exist
-            const isExist = await prisma.major.findFirst({ where: { name } })
+            const isExist = await prisma.major.findUnique({ where: { code } })
             if (isExist) continue
             majors.push(d)
         }

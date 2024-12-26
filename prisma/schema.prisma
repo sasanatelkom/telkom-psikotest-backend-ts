@@ -43,7 +43,7 @@ model User {
 model Participant {
   id          String          @id @default(uuid())
   name        String
-  email       String          @unique
+  email       String
   phoneNumber String
   schoolName  String
   class       String
@@ -57,9 +57,11 @@ model Participant {
 }
 
 model Major {
-  id   String  @id @default(uuid())
-  name String
-  url  String?
+  id     String  @id @default(uuid())
+  name   String
+  degree String
+  code   String  @unique
+  url    String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
