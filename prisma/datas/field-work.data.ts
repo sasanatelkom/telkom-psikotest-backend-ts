@@ -1,4 +1,4 @@
-import { IFieldWork } from "prisma/interfaces/field-work.interface";
+import { IFieldWork } from "../interfaces/field-work.interface";
 
 export const fieldWorkData: IFieldWork[] = [
     { name: "Bidang Bisnis" },
