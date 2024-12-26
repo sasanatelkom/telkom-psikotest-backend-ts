@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { DbService } from '../../db.service';
-import { ICreateUser, IUpdateUser } from 'src/user/interfaces/user.interface';
+import { ICreateUser, IUpdateUser } from '../../../user/interfaces/user.interface';
 
 
 @Injectable()

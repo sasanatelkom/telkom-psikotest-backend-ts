@@ -7,8 +7,8 @@ import { JwtStrategy } from './strategy';
 import { MomentModule } from '@ccmos/nestjs-moment';
 import { ConfigModule } from '@nestjs/config';
 import { AuthRepository } from './auth.repository';
-import { UserModule } from 'src/user/user.module';
-import { HelperModule } from 'src/helpers/helper.module';
+import { UserModule } from '../user/user.module';
+import { HelperModule } from '../helpers/helper.module';
 
 @Module({
   imports: [

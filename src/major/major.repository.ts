@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { IUpdateMajor } from 'src/major/interfaces/major.interface';
-import { MajorQuery } from 'src/prisma/queries/major/major.query';
-import { CustomError } from 'utils/error/custom-error';
+import { IUpdateMajor } from '../major/interfaces/major.interface';
+import { MajorQuery } from '../prisma/queries/major/major.query';
+import { CustomError } from '../utils/error/custom-error';
 
 @Injectable()
 export class MajorRepository {

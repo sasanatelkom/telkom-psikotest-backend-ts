@@ -14,8 +14,8 @@ import { AuthService } from './auth.service';
 import { JwtGuard } from './guard';
 import { LoginUserDto } from './dto/login-user.dto';
 import { Request } from 'express'
-import { HttpHelper } from 'src/helpers/http.helper';
-import { Validation } from 'src/helpers/validation.helper';
+import { HttpHelper } from '../helpers/http.helper';
+import { Validation } from '../helpers/validation.helper';
 @Controller('auth')
 export class AuthController {
   constructor(

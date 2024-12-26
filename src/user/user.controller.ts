@@ -13,14 +13,14 @@ import {
     Res,
 } from '@nestjs/common';
 import { UserService } from './user.service';
-import { JwtGuard, RoleGuard } from 'src/auth/guard';
+import { JwtGuard, RoleGuard } from '../auth/guard';
 import { TypeRoleUser } from '@prisma/client';
-import { Roles } from 'src/auth/decorator';
+import { Roles } from '../auth/decorator';
 import { CreateUserDto, UpdateUserDto } from './dto/user.dto';
-import { AuthService } from 'src/auth/auth.service';
-import { HttpHelper } from 'src/helpers/http.helper';
+import { AuthService } from '../auth/auth.service';
+import { HttpHelper } from '../helpers/http.helper';
 import { Response } from 'express';
-import { Validation } from 'src/helpers/validation.helper';
+import { Validation } from '../helpers/validation.helper';
 
 @Controller('user')
 export class UserController {

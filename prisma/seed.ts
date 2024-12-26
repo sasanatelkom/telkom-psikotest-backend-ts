@@ -1,4 +1,4 @@
-import { Prisma, PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client'
 import { IMajor } from './interfaces/major.interface'
 import { majorData } from './datas/major.data'
 

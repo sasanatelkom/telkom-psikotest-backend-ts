@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { DbService } from '../../db.service';
-import { IUpdateMajor } from 'src/major/interfaces/major.interface';
-
+import { IUpdateMajor } from '../../../major/interfaces/major.interface';
 
 @Injectable()
 export class MajorQuery extends DbService {

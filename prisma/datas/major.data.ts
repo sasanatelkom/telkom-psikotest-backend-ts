@@ -1,4 +1,4 @@
-import { IMajor } from "prisma/interfaces/major.interface";
+import { IMajor } from "../interfaces/major.interface";
 
 export const majorData: IMajor[] = [
     { "name": "S1-Akuntansi", "url": "" },

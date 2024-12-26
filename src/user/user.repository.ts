@@ -2,7 +2,7 @@ import * as bcrypt from 'bcrypt';
 import { Injectable } from '@nestjs/common';
 import { UserQuery } from '../prisma/queries/user/user.query';
 import { CreateUserDto, UpdateUserDto } from './dto/user.dto';
-import { CustomError } from 'utils/error/custom-error';
+import { CustomError } from '../utils/error/custom-error';
 
 @Injectable()
 export class UserRepository {

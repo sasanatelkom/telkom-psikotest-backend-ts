@@ -4,8 +4,8 @@ import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
 import { PayloadToken } from './type';
 import { LoginUserDto } from './dto/login-user.dto';
-import { UserRepository } from 'src/user/user.repository';
-import { CustomError } from 'utils/error/custom-error';
+import { UserRepository } from '../user/user.repository';
+import { CustomError } from '../utils/error/custom-error';
 @Injectable()
 export class AuthRepository {
     constructor(

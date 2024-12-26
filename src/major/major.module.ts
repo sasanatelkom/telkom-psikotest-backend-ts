@@ -6,8 +6,8 @@ import { PrismaModule } from '../prisma/prisma.module';
 import { MajorService } from './major.service';
 import { MajorRepository } from './major.repository';
 import { MajorController } from './major.controller';
-import { HelperModule } from 'src/helpers/helper.module';
-import { AuthModule } from 'src/auth/auth.module';
+import { HelperModule } from '../helpers/helper.module';
+import { AuthModule } from '../auth/auth.module';
 
 @Module({
     imports: [

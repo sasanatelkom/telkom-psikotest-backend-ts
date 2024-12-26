@@ -11,12 +11,12 @@ import {
     UseGuards,
 } from '@nestjs/common';
 import { MajorService } from './major.service';
-import { HttpHelper } from 'src/helpers/http.helper';
+import { HttpHelper } from '../helpers/http.helper';
 import { Response } from 'express';
-import { Validation } from 'src/helpers/validation.helper';
-import { JwtGuard, RoleGuard } from 'src/auth/guard';
+import { Validation } from '../helpers/validation.helper';
+import { JwtGuard, RoleGuard } from '../auth/guard';
 import { TypeRoleUser } from '@prisma/client';
-import { Roles } from 'src/auth/decorator';
+import { Roles } from '../auth/decorator';
 import { UpdateMajorDto } from './dto/major.dto';
 
 @Controller('major')

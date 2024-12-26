@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { MajorRepository } from './major.repository';
-import { IUpdateMajor } from 'src/major/interfaces/major.interface';
+import { IUpdateMajor } from '../major/interfaces/major.interface';
 
 @Injectable()
 export class MajorService {
