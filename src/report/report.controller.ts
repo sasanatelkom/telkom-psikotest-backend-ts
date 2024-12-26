@@ -13,6 +13,9 @@ import { ReportService } from './report.service';
 import { HttpHelper } from '../helpers/http.helper';
 import { Response } from 'express';
 import { Validation } from '../helpers/validation.helper';
+import { JwtGuard, RoleGuard } from 'src/auth/guard';
+import { Roles } from '../auth/decorator';
+import { TypeRoleUser } from '@prisma/client';
 
 @Controller('report')
 export class ReportController {
@@ -22,6 +25,8 @@ export class ReportController {
         private readonly validation: Validation,
     ) { }
 
+    @UseGuards(JwtGuard, RoleGuard)
+    @Roles(TypeRoleUser.SUPERADMIN)
     @Get("admin/dashboard")
     async getDashboardSuperAdmin(@Res() res: Response) {
         try {
