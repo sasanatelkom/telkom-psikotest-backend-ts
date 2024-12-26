@@ -9,6 +9,7 @@ import { HelperModule } from './helpers/helper.module';
 import { MajorModule } from './major/major.module';
 import { FieldWorkModule } from './field-work/field-work.module';
 import { ParticipantModule } from './participant/participant.module';
+import { ReportModule } from './report/report.module';
 
 @Module({
   imports: [
@@ -24,7 +25,8 @@ import { ParticipantModule } from './participant/participant.module';
     UserModule,
     MajorModule,
     FieldWorkModule,
-    ParticipantModule
+    ParticipantModule,
+    ReportModule
   ],
   controllers: [],
   providers: [],

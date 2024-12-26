@@ -6,7 +6,7 @@ import { ParticipantController } from './participant.controller';
 import { HelperModule } from '../helpers/helper.module';
 import { AuthModule } from '../auth/auth.module';
 import { JwtModule } from '@nestjs/jwt';
-import { FieldWorkModule } from 'src/field-work/field-work.module';
+import { FieldWorkModule } from '../field-work/field-work.module';
 
 @Module({
     imports: [

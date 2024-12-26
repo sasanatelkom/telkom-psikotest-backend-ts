@@ -3,7 +3,7 @@ import { ParticipantQuery } from '../prisma/queries/participant/participant.quer
 import { CreateParticipantDto } from './dto/participant.dto';
 import { CustomError } from '../utils/error/custom-error';
 import { Participant } from '@prisma/client';
-import { FieldWorkRepository } from 'src/field-work/field-work.repository';
+import { FieldWorkRepository } from '../field-work/field-work.repository';
 
 @Injectable()
 export class ParticipantRepository {
