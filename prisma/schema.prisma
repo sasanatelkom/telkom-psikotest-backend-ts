@@ -49,9 +49,10 @@ model Participant {
   class       String
   orientation TypeOrientation
 
-  createdAt              DateTime                 @default(now())
-  updatedAt              DateTime                 @updatedAt
-  participantOnFieldWork ParticipantOnFieldWork[]
+  createdAt                       DateTime                          @default(now())
+  updatedAt                       DateTime                          @updatedAt
+  participantOnFieldWork          ParticipantOnFieldWork[]
+  participantOnProfessionQuestion ParticipantOnProfessionQuestion[]
 
   @@index([id, email])
 }
@@ -86,4 +87,35 @@ model ParticipantOnFieldWork {
   fieldWork     FieldWork   @relation(fields: [idFieldWork], references: [id], onDelete: Cascade)
 
   @@id([idParticipant, idFieldWork])
+}
+
+model ProfessionQuestion {
+  id          String  @id @default(uuid())
+  question    String
+  profession1 String
+  code1       String
+  image1      String?
+
+  profession2 String
+  code2       String
+  image2      String?
+
+  createdAt                       DateTime                          @default(now())
+  updatedAt                       DateTime                          @updatedAt
+  participantOnProfessionQuestion ParticipantOnProfessionQuestion[]
+}
+
+model ParticipantOnProfessionQuestion {
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  nameProfession       String
+  codeProfession       String
+  timeTrack            DateTime
+  idParticipant        String
+  participant          Participant        @relation(fields: [idParticipant], references: [id], onDelete: Cascade)
+  idProfessionQuestion String
+  profession           ProfessionQuestion @relation(fields: [idProfessionQuestion], references: [id], onDelete: Cascade)
+
+  @@id([idParticipant, idProfessionQuestion])
 }

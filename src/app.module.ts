@@ -10,6 +10,7 @@ import { MajorModule } from './major/major.module';
 import { FieldWorkModule } from './field-work/field-work.module';
 import { ParticipantModule } from './participant/participant.module';
 import { ReportModule } from './report/report.module';
+import { ProfessionQuestionModule } from './profession-question/profession-question.module';
 
 @Module({
   imports: [
@@ -26,7 +27,8 @@ import { ReportModule } from './report/report.module';
     MajorModule,
     FieldWorkModule,
     ParticipantModule,
-    ReportModule
+    ReportModule,
+    ProfessionQuestionModule
   ],
   controllers: [],
   providers: [],
