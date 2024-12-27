@@ -23,11 +23,13 @@ export class ParticipantRepository {
     }
 
     async createParticipant(dto: CreateParticipantDto): Promise<Participant> {
-        const { name, schoolName, email, phoneNumber, orientation, class: kelas } = dto;
+        const { name, schoolName, email, phoneNumber, orientation, class: kelas, fieldWorks } = dto;
 
-        await this.fieldWorkRepository.checkAllFieldWorksExist(dto.idFieldWorks);
+        const fieldWorkIds = fieldWorks.map((fieldWork) => fieldWork.idFieldWork);
 
-        // Create the participant
+        await this.fieldWorkRepository.checkAllFieldWorksExist(fieldWorkIds);
+
+        // Buat participant dengan relasi ke fieldWork
         return await this.participantQuery.create({
             name,
             class: kelas,
@@ -36,13 +38,13 @@ export class ParticipantRepository {
             email,
             phoneNumber,
             participantOnFieldWork: {
-                create: dto.idFieldWorks.map((fieldWork) => ({
-                    idFieldWork: fieldWork
-                }))
-            }
+                create: fieldWorks.map(({ idFieldWork, index }) => ({
+                    idFieldWork,
+                    index,
+                })),
+            },
         });
     }
-
 
 
     async deleteParticipant(id: string): Promise<Participant> {

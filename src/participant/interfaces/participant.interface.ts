@@ -5,6 +5,6 @@ export type ICreateParticipant = Pick<
     'name' | 'email' | 'phoneNumber' | 'schoolName' | 'class' | 'orientation'
 > & {
     participantOnFieldWork: {
-        create: { idFieldWork: string }[];
+        create: { idFieldWork: string, index: number }[];
     };
 };

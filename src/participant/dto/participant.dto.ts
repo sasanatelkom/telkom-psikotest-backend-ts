@@ -1,6 +1,18 @@
-import { IsString, IsEmail, IsEnum, IsArray, IsNotEmpty, ArrayNotEmpty } from 'class-validator';
+import { IsString, IsEmail, IsEnum, IsArray, IsNotEmpty, ValidateNested, IsInt, Min } from 'class-validator';
 import { TypeOrientation } from '@prisma/client';
+import { Type } from 'class-transformer';
 import { PartialType } from '@nestjs/mapped-types';
+
+class FieldWorkDto {
+    @IsNotEmpty()
+    @IsString()
+    idFieldWork: string;
+
+    @IsNotEmpty()
+    @IsInt()
+    @Min(1)
+    index: number;
+}
 
 export class CreateParticipantDto {
     @IsNotEmpty()
@@ -28,9 +40,9 @@ export class CreateParticipantDto {
     orientation: TypeOrientation;
 
     @IsArray()
-    @ArrayNotEmpty()
-    idFieldWorks: string[];
+    @ValidateNested({ each: true })
+    @Type(() => FieldWorkDto)
+    fieldWorks: FieldWorkDto[];
 }
 
 export class UpdateParticipantDto extends PartialType(CreateParticipantDto) { }
-
