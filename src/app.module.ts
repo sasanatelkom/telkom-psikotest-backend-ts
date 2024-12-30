@@ -11,6 +11,7 @@ import { FieldWorkModule } from './field-work/field-work.module';
 import { ParticipantModule } from './participant/participant.module';
 import { ReportModule } from './report/report.module';
 import { ProfessionQuestionModule } from './profession-question/profession-question.module';
+import { PersonalityQuestionModule } from './personality-question/personality-question.module';
 
 @Module({
   imports: [
@@ -28,7 +29,8 @@ import { ProfessionQuestionModule } from './profession-question/profession-quest
     FieldWorkModule,
     ParticipantModule,
     ReportModule,
-    ProfessionQuestionModule
+    ProfessionQuestionModule,
+    PersonalityQuestionModule,
   ],
   controllers: [],
   providers: [],

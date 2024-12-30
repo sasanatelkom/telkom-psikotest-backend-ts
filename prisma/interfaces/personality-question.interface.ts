@@ -6,4 +6,6 @@ export interface IPersonalityQuestion {
     code1: string;
     opsi2: string;
     code2: string;
+    image1?: string;
+    image2?: string;
 }

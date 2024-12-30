@@ -3,7 +3,7 @@ import { DbService } from '../../db.service';
 import { IUpdatePersonalityQuestion } from '../../../personality-question/interfaces/personality-question.interface';
 
 @Injectable()
-export class ProfessionQuestionQuery extends DbService {
+export class PersonalityQuestionQuery extends DbService {
     async findById(id: string) {
         return await this.prisma.personalityQuestion.findUnique({
             where: {

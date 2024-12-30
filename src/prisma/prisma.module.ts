@@ -8,6 +8,7 @@ import { FieldWorkQuery } from './queries/field-work/field-work.query';
 import { ParticipantQuery } from './queries/participant/participant.query';
 import { ReportQuery } from './queries/report/report.query';
 import { ProfessionQuestionQuery } from './queries/profession-question/profession-question.query';
+import { PersonalityQuestionQuery } from './queries/personality-question/personality-question.query';
 
 @Module({
   imports: [ConfigModule],
@@ -18,7 +19,8 @@ import { ProfessionQuestionQuery } from './queries/profession-question/professio
     FieldWorkQuery,
     ParticipantQuery,
     ReportQuery,
-    ProfessionQuestionQuery
+    ProfessionQuestionQuery,
+    PersonalityQuestionQuery,
   ],
   exports: [
     PrismaService,
@@ -28,7 +30,8 @@ import { ProfessionQuestionQuery } from './queries/profession-question/professio
     FieldWorkQuery,
     ParticipantQuery,
     ReportQuery,
-    ProfessionQuestionQuery
+    ProfessionQuestionQuery,
+    PersonalityQuestionQuery,
   ],
 })
 export class PrismaModule { }
