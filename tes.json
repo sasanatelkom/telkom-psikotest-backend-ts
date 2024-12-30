@@ -1,0 +1,236 @@
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "phoneNumber": "+628123456789",
+  "schoolName": "XYZ High School",
+  "class": "12A",
+  "orientation": "DATA_TEKNOLOGI",
+  "fieldWorks": [
+    {
+      "idFieldWork": "0567d605-b664-4b63-beba-61187f8c68bb",
+      "index": 1
+    },
+    {
+      "idFieldWork": "1e5ace48-cb01-46c5-b961-3ae44487addb",
+      "index": 2
+    },
+    {
+      "idFieldWork": "304838dd-961c-43be-9f04-03e50cdadf94",
+      "index": 3
+    }
+  ],
+  "answerProfessionQuestions": [
+    {
+      "nameProfession": "Ahli Robotik",
+      "codeProfession": "I",
+      "timeTrack": 13,
+      "idProfessionQuestion": "question1"
+    },
+    {
+      "nameProfession": "Fashion Designer",
+      "codeProfession": "A",
+      "timeTrack": 21,
+      "idProfessionQuestion": "question2"
+    },
+    {
+      "nameProfession": "Marketing Manager",
+      "codeProfession": "E",
+      "timeTrack": 39,
+      "idProfessionQuestion": "question3"
+    },
+    {
+      "nameProfession": "Reporter/Jurnalis",
+      "codeProfession": "A",
+      "timeTrack": 12,
+      "idProfessionQuestion": "question4"
+    },
+    {
+      "nameProfession": "Tour Guide",
+      "codeProfession": "S",
+      "timeTrack": 14,
+      "idProfessionQuestion": "question5"
+    },
+    {
+      "nameProfession": "Ahli Jaringan Komputer",
+      "codeProfession": "C",
+      "timeTrack": 16,
+      "idProfessionQuestion": "question6"
+    },
+    {
+      "nameProfession": "Psikolog",
+      "codeProfession": "S",
+      "timeTrack": 9,
+      "idProfessionQuestion": "question7"
+    },
+    {
+      "nameProfession": "Event Organizer/Management",
+      "codeProfession": "E",
+      "timeTrack": 18,
+      "idProfessionQuestion": "question8"
+    },
+    {
+      "nameProfession": "Web Designer",
+      "codeProfession": "I",
+      "timeTrack": 21,
+      "idProfessionQuestion": "question9"
+    },
+    {
+      "nameProfession": "Human Resource Development",
+      "codeProfession": "E",
+      "timeTrack": 12,
+      "idProfessionQuestion": "question10"
+    },
+    {
+      "nameProfession": "Sistem Analis",
+      "codeProfession": "C",
+      "timeTrack": 18,
+      "idProfessionQuestion": "question11"
+    },
+    {
+      "nameProfession": "Entrepreneur",
+      "codeProfession": "I",
+      "timeTrack": 29,
+      "idProfessionQuestion": "question12"
+    },
+    {
+      "nameProfession": "Akuntan",
+      "codeProfession": "C",
+      "timeTrack": 32,
+      "idProfessionQuestion": "question13"
+    },
+    {
+      "nameProfession": "Pilot",
+      "codeProfession": "R",
+      "timeTrack": 21,
+      "idProfessionQuestion": "question14"
+    },
+    {
+      "nameProfession": "Konselor Karir",
+      "codeProfession": "S",
+      "timeTrack": 12,
+      "idProfessionQuestion": "question15"
+    }
+  ],
+  "answerPersonalityQuestions": [
+    {
+      "opsi": "Menemukan dan mengembangkan ide dengan mendiskusikannya",
+      "code": "E",
+      "groupCodeQuestion": "IE",
+      "idPersonalityQuestion": "ppq1"
+    },
+    {
+      "opsi": "Menemukan dan mengembangkan ide dengan merenungkan",
+      "code": "I",
+      "groupCodeQuestion": "IE",
+      "idPersonalityQuestion": "ppq2"
+    },
+    {
+      "opsi": "Beraktifitas sendirian di rumah menyenangkan",
+      "code": "I",
+      "groupCodeQuestion": "IE",
+      "idPersonalityQuestion": "ppq3"
+    },
+    {
+      "opsi": "Berhati-hati, penuh pertimbangan, kaku",
+      "code": "I",
+      "groupCodeQuestion": "IE",
+      "idPersonalityQuestion": "ppq4"
+    },
+    {
+      "opsi": "Sosial dan ekspresif",
+      "code": "E",
+      "groupCodeQuestion": "IE",
+      "idPersonalityQuestion": "ppq5"
+    },
+    {
+      "opsi": "Menggunakan ketrampilan yang sudah ada",
+      "code": "S",
+      "groupCodeQuestion": "SN",
+      "idPersonalityQuestion": "ppq6"
+    },
+    {
+      "opsi": "Berfokus pada masa kini (apa yang bisa di perbaiki sekarang)",
+      "code": "S",
+      "groupCodeQuestion": "SN",
+      "idPersonalityQuestion": "ppq7"
+    },
+    {
+      "opsi": "Menarik kesimpulan dengan hati-hati",
+      "code": "S",
+      "groupCodeQuestion": "SN",
+      "idPersonalityQuestion": "ppq8"
+    },
+    {
+      "opsi": "Bertindak dengan semangat tanpa menggunakan timeframe",
+      "code": "N",
+      "groupCodeQuestion": "SN",
+      "idPersonalityQuestion": "ppq9"
+    },
+    {
+      "opsi": "Menggunakan pengalaman sebagai pedoman",
+      "code": "S",
+      "groupCodeQuestion": "SN",
+      "idPersonalityQuestion": "ppq10"
+    },
+    {
+      "opsi": "Menggunakan imajinasi dan perenungan sebagai pedoman",
+      "code": "F",
+      "groupCodeQuestion": "TF",
+      "idPersonalityQuestion": "ppq11"
+    },
+    {
+      "opsi": "Mengambil keputusan berdasar perasaan pribadi dan kondisi orang lain",
+      "code": "F",
+      "groupCodeQuestion": "TF",
+      "idPersonalityQuestion": "ppq12"
+    },
+    {
+      "opsi": "Menganalisa",
+      "code": "T",
+      "groupCodeQuestion": "TF",
+      "idPersonalityQuestion": "ppq13"
+    },
+    {
+      "opsi": "Yang penting situasi harmonis terjaga",
+      "code": "F",
+      "groupCodeQuestion": "TF",
+      "idPersonalityQuestion": "ppq14"
+    },
+    {
+      "opsi": "Bersemangat saat menolong orang keluar dari kesalahan dan meluruskan",
+      "code": "F",
+      "groupCodeQuestion": "TF",
+      "idPersonalityQuestion": "ppq15"
+    },
+    {
+      "opsi": "Berorientasi pada proses",
+      "code": "P",
+      "groupCodeQuestion": "PJ",
+      "idPersonalityQuestion": "ppq16"
+    },
+    {
+      "opsi": "Perubahan adalah semangat hidup",
+      "code": "P",
+      "groupCodeQuestion": "PJ",
+      "idPersonalityQuestion": "ppq17"
+    },
+    {
+      "opsi": "Bertindak sesuai apa yang sudah direncanakan",
+      "code": "J",
+      "groupCodeQuestion": "PJ",
+      "idPersonalityQuestion": "ppq18"
+    },
+    {
+      "opsi": "Aturan, jadwal dan target sangat membantu dan memperjelas tindakan",
+      "code": "J",
+      "groupCodeQuestion": "PJ",
+      "idPersonalityQuestion": "ppq19"
+    },
+    {
+      "opsi": "Terencana dan memiliki deadline jelas",
+      "code": "J",
+      "groupCodeQuestion": "PJ",
+      "idPersonalityQuestion": "ppq20"
+    }
+  ]
+}

@@ -42,6 +42,24 @@ class AnswerProfessionQuestionDto {
     idProfessionQuestion: string;
 }
 
+class AnswerPersonalityQuestionDto {
+    @IsNotEmpty()
+    @IsString()
+    opsi: string;
+
+    @IsNotEmpty()
+    @IsString()
+    code: string;
+
+    @IsNotEmpty()
+    @IsString()
+    groupCodeQuestion: string;
+
+    @IsNotEmpty()
+    @IsString()
+    idPersonalityQuestion: string;
+}
+
 export class CreateParticipantDto {
     @IsNotEmpty()
     @IsString()
@@ -76,6 +94,11 @@ export class CreateParticipantDto {
     @ValidateNested({ each: true })
     @Type(() => AnswerProfessionQuestionDto)
     answerProfessionQuestions: AnswerProfessionQuestionDto[];
+
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => AnswerPersonalityQuestionDto)
+    answerPersonalityQuestions: AnswerPersonalityQuestionDto[];
 }
 
 export class UpdateParticipantDto extends PartialType(CreateParticipantDto) { }

@@ -17,7 +17,7 @@ export class ParticipantService {
         return await this.participantRepository.getAllParticipants();
     }
 
-    async createParticipant(dto: CreateParticipantDto): Promise<Participant> {
+    async createParticipant(dto: CreateParticipantDto) {
         return await this.participantRepository.createParticipant(dto);
     }
 

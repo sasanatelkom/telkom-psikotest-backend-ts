@@ -18,4 +18,12 @@ export type ICreateParticipant = Pick<
             idProfessionQuestion: string;
         }[];
     };
+    participantOnPersonalityQuestion: {
+        create: {
+            opsi: string;
+            code: string;
+            groupCodeQuestion: string;
+            idPersonalityQuestion: string;
+        }[];
+    };
 };

@@ -22,7 +22,7 @@ export class ParticipantRepository {
         return await this.participantQuery.findAll();
     }
 
-    async createParticipant(dto: CreateParticipantDto): Promise<Participant> {
+    async createParticipant(dto: CreateParticipantDto) {
         const {
             name,
             schoolName,
@@ -32,22 +32,19 @@ export class ParticipantRepository {
             class: kelas,
             fieldWorks,
             answerProfessionQuestions,
+            answerPersonalityQuestions,
         } = dto;
 
         // Step 1: Validate fieldWorkIds to ensure all field works exist
         const fieldWorkIds = fieldWorks.map((fieldWork) => fieldWork.idFieldWork);
         await this.fieldWorkRepository.checkAllFieldWorksExist(fieldWorkIds);
 
-        // Step 2: Calculate the frequency and total time for each profession code
+        // Step 2: Calculate and sort profession stats, and get top two professions
         const professionStats = this.calculateProfessionStats(answerProfessionQuestions);
-
-        // Step 3: Sort the professions based on frequency and total time
         const sortedProfessions = this.sortProfessions(professionStats);
-
-        // Step 4: Get the top two professions for codeSds, codeSds1, and codeSds2
         const { codeSds, codeSds1, codeSds2 } = this.getTopTwoProfessions(sortedProfessions);
 
-        // Step 5: Prepare the participantOnProfessionQuestion data
+        // Step 3: Prepare data for participantOnProfessionQuestion and participantOnPersonalityQuestion
         const participantOnProfessionQuestionData = answerProfessionQuestions.map(({
             nameProfession,
             codeProfession,
@@ -60,7 +57,22 @@ export class ParticipantRepository {
             idProfessionQuestion,
         }));
 
-        // Step 6: Create the participant with the necessary relations
+        const participantOnPersonalityQuestionData = answerPersonalityQuestions.map(({
+            opsi,
+            code,
+            groupCodeQuestion,
+            idPersonalityQuestion
+        }) => ({
+            opsi,
+            code,
+            groupCodeQuestion,
+            idPersonalityQuestion,
+        }));
+
+        // Step 4: Calculate MBTI profile from personality answers
+        const mbti = this.calculateMbti(answerPersonalityQuestions);
+
+        // Step 5: Create the participant with the necessary relations
         return await this.participantQuery.create({
             name,
             class: kelas,
@@ -71,6 +83,7 @@ export class ParticipantRepository {
             codeSds,
             codeSds1,
             codeSds2,
+            mbti,
             participantOnFieldWork: {
                 create: fieldWorks.map(({ idFieldWork, index }) => ({
                     idFieldWork,
@@ -80,8 +93,12 @@ export class ParticipantRepository {
             participantOnProfessionQuestion: {
                 create: participantOnProfessionQuestionData,
             },
+            participantOnPersonalityQuestion: {
+                create: participantOnPersonalityQuestionData,
+            },
         });
     }
+
 
     async deleteParticipant(id: string): Promise<Participant> {
         const participant = await this.getThrowParticipantById(id);
@@ -126,5 +143,39 @@ export class ParticipantRepository {
         return { codeSds, codeSds1, codeSds2 };
     }
 
+    calculateMbti(answerPersonalityQuestions: {
+        opsi: string;
+        code: string;
+        groupCodeQuestion: string;
+        idPersonalityQuestion: string;
+    }[]): string {
+        const groupCounts = {};
 
+        // Count occurrences of each code within each groupCodeQuestion
+        answerPersonalityQuestions.forEach(({ groupCodeQuestion, code }) => {
+            if (!groupCounts[groupCodeQuestion]) {
+                groupCounts[groupCodeQuestion] = { I: 0, E: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 }; // Initialize all groups with zero counts
+            }
+            groupCounts[groupCodeQuestion][code]++;
+        });
+
+        // Calculate MBTI based on the highest counts in each group
+        let mbti = '';
+        const mbtiGroups = ['IE', 'SN', 'TF', 'PJ']; // List of MBTI group codes
+
+        mbtiGroups.forEach((groupCodeQuestion) => {
+            const counts = groupCounts[groupCodeQuestion];
+            if (groupCodeQuestion === 'IE') {
+                mbti += counts.I > counts.E ? 'I' : 'E';
+            } else if (groupCodeQuestion === 'SN') {
+                mbti += counts.S > counts.N ? 'S' : 'N';
+            } else if (groupCodeQuestion === 'TF') {
+                mbti += counts.T > counts.F ? 'T' : 'F';
+            } else if (groupCodeQuestion === 'PJ') {
+                mbti += counts.J > counts.P ? 'J' : 'P';
+            }
+        });
+
+        return mbti;
+    }
 }
