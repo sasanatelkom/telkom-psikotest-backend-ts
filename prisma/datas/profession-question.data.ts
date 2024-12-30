@@ -35,7 +35,7 @@ export const professionQuestionData: IProfessionQuestion[] = [
         id: "ProfQ-0004",
         question: "Mana Profesi yang paling kamu minati?",
         profession1: "Dokter",
-        code1: "S",
+        code1: "I",
         image1: null,
         profession2: "Reporter/Jurnalis",
         code2: "A",
@@ -45,20 +45,20 @@ export const professionQuestionData: IProfessionQuestion[] = [
         id: "ProfQ-0005",
         question: "Mana Profesi yang paling kamu minati?",
         profession1: "Tour Guide",
-        code1: "E",
+        code1: "S",
         image1: null,
         profession2: "Financial Planner",
-        code2: "C",
+        code2: "E",
         image2: null
     },
     {
         id: "ProfQ-0006",
         question: "Mana Profesi yang paling kamu minati?",
         profession1: "Ahli Jaringan Komputer",
-        code1: "R",
+        code1: "C",
         image1: null,
         profession2: "Arsitektur",
-        code2: "A",
+        code2: "R",
         image2: null
     },
     {
@@ -88,7 +88,7 @@ export const professionQuestionData: IProfessionQuestion[] = [
         code1: "R",
         image1: null,
         profession2: "Web Designer",
-        code2: "A",
+        code2: "I",
         image2: null
     },
     {
@@ -98,14 +98,14 @@ export const professionQuestionData: IProfessionQuestion[] = [
         code1: "S",
         image1: null,
         profession2: "Human Resource Development",
-        code2: "C",
+        code2: "E",
         image2: null
     },
     {
         id: "ProfQ-0011",
         question: "Mana Profesi yang paling kamu minati?",
         profession1: "Sistem Analis",
-        code1: "I",
+        code1: "C",
         image1: null,
         profession2: "Ahli Geologi",
         code2: "R",
@@ -115,7 +115,7 @@ export const professionQuestionData: IProfessionQuestion[] = [
         id: "ProfQ-0012",
         question: "Mana Profesi yang paling kamu minati?",
         profession1: "Psikiater",
-        code1: "S",
+        code1: "I",
         image1: null,
         profession2: "Fotografer",
         code2: "A",

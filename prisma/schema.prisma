@@ -51,8 +51,9 @@ model Participant {
   codeSds     String?
   codeSds1    String?
   codeSds2    String?
-  mbti        String?
 
+  mbti                             String?
+  mbtiNaration                     String?
   createdAt                        DateTime                           @default(now())
   updatedAt                        DateTime                           @updatedAt
   participantOnFieldWork           ParticipantOnFieldWork[]
@@ -158,4 +159,12 @@ model ParticipantOnPersonalityQuestion {
   personality           PersonalityQuestion @relation(fields: [idPersonalityQuestion], references: [id], onDelete: Cascade)
 
   @@id([idParticipant, idPersonalityQuestion])
+}
+
+model Mbti {
+  id        String   @id @default(uuid())
+  codeMbti  String   @unique
+  naration  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
