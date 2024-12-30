@@ -8,4 +8,5 @@ export interface IPersonalityQuestion {
     code2: string;
     image1?: string;
     image2?: string;
+    index?: number;
 }

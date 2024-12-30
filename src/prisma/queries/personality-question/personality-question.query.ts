@@ -13,8 +13,13 @@ export class PersonalityQuestionQuery extends DbService {
     }
 
     async findAll() {
-        return await this.prisma.personalityQuestion.findMany()
+        return await this.prisma.personalityQuestion.findMany({
+            orderBy: {
+                index: 'asc',
+            },
+        });
     }
+
 
     async update(id: string, data: IUpdatePersonalityQuestion) {
         return await this.prisma.personalityQuestion.update({ where: { id }, data })

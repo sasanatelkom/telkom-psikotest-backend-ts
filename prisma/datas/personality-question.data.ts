@@ -2,6 +2,7 @@ import { IPersonalityQuestion } from "../interfaces/personality-question.interfa
 
 export const personalityQuestionData: IPersonalityQuestion[] = [
     {
+        index: 1,
         id: "PerQ-IE-001",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "IE",
@@ -13,6 +14,7 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         image2: null,
     },
     {
+        index: 2,
         id: "PerQ-IE-002",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "IE",
@@ -21,9 +23,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Lebih memilih berkomunikasi dengan bicara",
         code2: "E",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 3,
         id: "PerQ-IE-003",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "IE",
@@ -32,9 +35,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Beraktifitas sendirian di rumah membosankan",
         code2: "E",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 4,
         id: "PerQ-IE-004",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "IE",
@@ -43,9 +47,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Spontan, easy going, fleksibel",
         code2: "E",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 5,
         id: "PerQ-IE-005",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "IE",
@@ -54,9 +59,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Sosial dan ekspresif",
         code2: "E",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 6,
         id: "PerQ-SN-001",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "SN",
@@ -65,9 +71,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Menyukai tantangan untuk menguasai ketrampilan baru",
         code2: "N",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 7,
         id: "PerQ-SN-002",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "SN",
@@ -76,9 +83,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Berfokus pada masa depan (apa yang mungkin dicapai di masa depan)",
         code2: "N",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 8,
         id: "PerQ-SN-003",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "SN",
@@ -87,9 +95,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Menarik kesimpulan dengan cepat",
         code2: "N",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 9,
         id: "PerQ-SN-004",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "SN",
@@ -98,9 +107,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Bertindak dengan semangat tanpa menggunakan timeframe",
         code2: "N",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 10,
         id: "PerQ-SN-005",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "SN",
@@ -109,9 +119,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Menggunakan imajinasi dan perenungan sebagai pedoman",
         code2: "N",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 11,
         id: "PerQ-TF-001",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "TF",
@@ -120,9 +131,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Mengambil keputusan berdasar perasaan pribadi dan kondisi orang lain",
         code2: "F",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 12,
         id: "PerQ-TF-002",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "TF",
@@ -131,9 +143,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Berempati",
         code2: "F",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 13,
         id: "PerQ-TF-003",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "TF",
@@ -142,9 +155,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Yang penting situasi harmonis terjaga",
         code2: "F",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 14,
         id: "PerQ-TF-004",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "TF",
@@ -153,9 +167,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Bersemangat saat menolong orang keluar dari kesalahan dan meluruskan",
         code2: "F",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 15,
         id: "PerQ-TF-005",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "TF",
@@ -164,9 +179,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Menuntut perlakuan khusus sesuai karakteristik masing-masing orang",
         code2: "F",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 16,
         id: "PerQ-PJ-001",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "PJ",
@@ -175,9 +191,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Berorientasi pada hasil",
         code2: "J",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 17,
         id: "PerQ-PJ-002",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "PJ",
@@ -186,9 +203,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Perubahan adalah musuh",
         code2: "J",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 18,
         id: "PerQ-PJ-003",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "PJ",
@@ -197,9 +215,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Bertindak sesuai apa yang sudah direncanakan",
         code2: "J",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 19,
         id: "PerQ-PJ-004",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "PJ",
@@ -208,9 +227,10 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Aturan, jadwal dan target sangat membantu dan memperjelas tindakan",
         code2: "J",
         image1: null,
-        image2: null
+        image2: null,
     },
     {
+        index: 20,
         id: "PerQ-PJ-005",
         question: "Mana pernyataan yang paling menggambarkan kamu?",
         groupCode: "PJ",
@@ -219,6 +239,6 @@ export const personalityQuestionData: IPersonalityQuestion[] = [
         opsi2: "Terencana dan memiliki deadline jelas",
         code2: "J",
         image1: null,
-        image2: null
+        image2: null,
     }
 ];

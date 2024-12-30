@@ -137,6 +137,7 @@ model PersonalityQuestion {
   code2     String
   image1    String?
   image2    String?
+  index     Int?
 
   createdAt                        DateTime                           @default(now())
   updatedAt                        DateTime                           @updatedAt
