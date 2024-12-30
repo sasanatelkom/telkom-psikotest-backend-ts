@@ -164,7 +164,7 @@ model ParticipantOnPersonalityQuestion {
 model Mbti {
   id        String   @id @default(uuid())
   codeMbti  String   @unique
-  naration  String
+  naration  String   @db.Text
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

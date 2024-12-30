@@ -7,6 +7,8 @@ import { IProfessionQuestion } from './interfaces/profession-question.interface'
 import { professionQuestionData } from './datas/profession-question.data'
 import { IPersonalityQuestion } from './interfaces/personality-question.interface'
 import { personalityQuestionData } from './datas/personality-question.data'
+import { IMbti } from './interfaces/mbti.interface'
+import { mbtiData } from './datas/mbti.data'
 
 const prisma = new PrismaClient()
 
@@ -70,12 +72,28 @@ async function seedPersonalityQuestion(data: IPersonalityQuestion[]) {
     return
 }
 
+async function seedMbti(data: IMbti[]) {
+    if (data.length > 0) {
+        const mbtis = []
+        for (const d of data) {
+            const { codeMbti } = d
+            const isExist = await prisma.mbti.findUnique({ where: { codeMbti } })
+            if (isExist) continue
+            mbtis.push(d)
+        }
+        await prisma.mbti.createMany({ data: mbtis })
+        console.log(`successfully seed the MBTI ${mbtis.length} datas.`)
+    }
+    return
+}
+
 async function main() {
     // running seeders
     await seedMajor(majorData)
     await seedFieldWork(fieldWorkData)
     await seedProfessionQuestion(professionQuestionData)
     await seedPersonalityQuestion(personalityQuestionData)
+    await seedMbti(mbtiData);
 }
 
 main()
