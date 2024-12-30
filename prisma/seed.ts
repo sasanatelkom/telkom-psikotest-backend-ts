@@ -5,6 +5,8 @@ import { IFieldWork } from './interfaces/field-work.interface'
 import { fieldWorkData } from './datas/field-work.data'
 import { IProfessionQuestion } from './interfaces/profession-question.interface'
 import { professionQuestionData } from './datas/profession-question.data'
+import { IPersonalityQuestion } from './interfaces/personality-question.interface'
+import { personalityQuestionData } from './datas/personality-question.data'
 
 const prisma = new PrismaClient()
 
@@ -12,9 +14,7 @@ async function seedMajor(data: IMajor[]) {
     if (data.length > 0) {
         const majors = []
         for (const d of data) {
-            // get data from d variable
             const { code } = d
-            // check if data exist
             const isExist = await prisma.major.findUnique({ where: { code } })
             if (isExist) continue
             majors.push(d)
@@ -29,9 +29,7 @@ async function seedFieldWork(data: IFieldWork[]) {
     if (data.length > 0) {
         const fieldWorks = []
         for (const d of data) {
-            // get data from d variable
             const { name } = d
-            // check if data exist
             const isExist = await prisma.fieldWork.findFirst({ where: { name } })
             if (isExist) continue
             fieldWorks.push(d)
@@ -46,9 +44,7 @@ async function seedProfessionQuestion(data: IProfessionQuestion[]) {
     if (data.length > 0) {
         const professionQuestions = []
         for (const d of data) {
-            // get data from d variable
             const { id } = d
-            // check if data exist
             const isExist = await prisma.professionQuestion.findUnique({ where: { id } })
             if (isExist) continue
             professionQuestions.push(d)
@@ -59,11 +55,27 @@ async function seedProfessionQuestion(data: IProfessionQuestion[]) {
     return
 }
 
+async function seedPersonalityQuestion(data: IPersonalityQuestion[]) {
+    if (data.length > 0) {
+        const personalityQuestions = []
+        for (const d of data) {
+            const { id } = d
+            const isExist = await prisma.personalityQuestion.findUnique({ where: { id } })
+            if (isExist) continue
+            personalityQuestions.push(d)
+        }
+        await prisma.personalityQuestion.createMany({ data: personalityQuestions })
+        console.log(`successfully seed the PersonalityQuestion ${personalityQuestions.length} datas.`)
+    }
+    return
+}
+
 async function main() {
     // running seeders
-    seedMajor(majorData)
-    seedFieldWork(fieldWorkData)
-    seedProfessionQuestion(professionQuestionData)
+    await seedMajor(majorData)
+    await seedFieldWork(fieldWorkData)
+    await seedProfessionQuestion(professionQuestionData)
+    await seedPersonalityQuestion(personalityQuestionData)
 }
 
 main()

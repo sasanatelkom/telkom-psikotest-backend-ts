@@ -53,10 +53,11 @@ model Participant {
   codeSds2    String?
   mbti        String?
 
-  createdAt                       DateTime                          @default(now())
-  updatedAt                       DateTime                          @updatedAt
-  participantOnFieldWork          ParticipantOnFieldWork[]
-  participantOnProfessionQuestion ParticipantOnProfessionQuestion[]
+  createdAt                        DateTime                           @default(now())
+  updatedAt                        DateTime                           @updatedAt
+  participantOnFieldWork           ParticipantOnFieldWork[]
+  participantOnProfessionQuestion  ParticipantOnProfessionQuestion[]
+  participantOnPersonalityQuestion ParticipantOnPersonalityQuestion[]
 
   @@index([id, email])
 }
@@ -124,4 +125,34 @@ model ParticipantOnProfessionQuestion {
   profession           ProfessionQuestion @relation(fields: [idProfessionQuestion], references: [id], onDelete: Cascade)
 
   @@id([idParticipant, idProfessionQuestion])
+}
+
+model PersonalityQuestion {
+  id        String @id @default(uuid())
+  question  String
+  groupCode String
+  opsi1     String
+  opsi2     String
+  code1     String
+  code2     String
+
+  createdAt                        DateTime                           @default(now())
+  updatedAt                        DateTime                           @updatedAt
+  participantOnPersonalityQuestion ParticipantOnPersonalityQuestion[]
+}
+
+model ParticipantOnPersonalityQuestion {
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  opsi              String
+  code              String
+  groupCodeQuestion String
+
+  idParticipant         String
+  participant           Participant         @relation(fields: [idParticipant], references: [id], onDelete: Cascade)
+  idPersonalityQuestion String
+  personality           PersonalityQuestion @relation(fields: [idPersonalityQuestion], references: [id], onDelete: Cascade)
+
+  @@id([idParticipant, idPersonalityQuestion])
 }
