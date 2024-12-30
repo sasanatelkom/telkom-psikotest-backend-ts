@@ -14,7 +14,7 @@ export type ICreateParticipant = Pick<
         create: {
             nameProfession: string;
             codeProfession: string;
-            timeTrack: number; // seconds
+            timeTrack: number; // mili seconds
             idProfessionQuestion: string;
         }[];
     };
