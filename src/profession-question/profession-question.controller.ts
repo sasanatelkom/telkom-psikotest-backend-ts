@@ -15,7 +15,7 @@ import { Validation } from '../helpers/validation.helper';
 import { JwtGuard, RoleGuard } from 'src/auth/guard';
 import { Roles } from '../auth/decorator';
 import { TypeRoleUser } from '@prisma/client';
-import { UpdateMajorDto } from './dto/profession-question.dto';
+import { UpdateProfessionDto } from './dto/profession-question.dto';
 
 @Controller('profession-question')
 export class ProfessionQuestionController {
@@ -53,7 +53,7 @@ export class ProfessionQuestionController {
     @Put(':id')
     async updateProfessionQuestion(
         @Param('id') id: string,
-        @Body() dto: UpdateMajorDto,
+        @Body() dto: UpdateProfessionDto,
         @Res() res: Response,
     ) {
         try {

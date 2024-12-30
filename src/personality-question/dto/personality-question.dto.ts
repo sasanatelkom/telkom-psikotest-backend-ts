@@ -1,13 +1,13 @@
 import { IsOptional, IsString } from 'class-validator';
 
-export class UpdateProfessionDto {
+export class UpdatePersonalityQuestionDto {
     @IsOptional()
     @IsString()
     question: string;
 
     @IsOptional()
     @IsString()
-    profession1: string;
+    opsi1: string;
 
 
     @IsOptional()
@@ -16,10 +16,14 @@ export class UpdateProfessionDto {
 
     @IsOptional()
     @IsString()
-    profession2: string;
+    opsi2: string;
 
 
     @IsOptional()
     @IsString()
     code2: string;
+
+    @IsOptional()
+    @IsString()
+    groupCode: string;
 }

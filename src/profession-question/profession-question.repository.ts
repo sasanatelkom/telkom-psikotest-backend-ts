@@ -1,9 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { ProfessionQuestionQuery } from '../prisma/queries/profession-question/profession-question.query';
-import { IUpdateProfessionQuestion } from './interfaces/profession-question.interface';
 import { CustomError } from '../utils/error/custom-error';
 import { ProfessionQuestion } from '@prisma/client';
-import { UpdateMajorDto } from './dto/profession-question.dto';
+import { UpdateProfessionDto } from './dto/profession-question.dto';
 
 @Injectable()
 export class ProfessionQuestionRepository {
@@ -23,7 +22,7 @@ export class ProfessionQuestionRepository {
 
     async updateProfessionQuestion(
         id: string,
-        dto: UpdateMajorDto,
+        dto: UpdateProfessionDto,
     ): Promise<ProfessionQuestion> {
         const { question, profession1, profession2, code1, code2 } = dto
         await this.getThrowProfessionQuestionById(id);
