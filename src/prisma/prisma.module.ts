@@ -9,6 +9,7 @@ import { ParticipantQuery } from './queries/participant/participant.query';
 import { ReportQuery } from './queries/report/report.query';
 import { ProfessionQuestionQuery } from './queries/profession-question/profession-question.query';
 import { PersonalityQuestionQuery } from './queries/personality-question/personality-question.query';
+import { MbtiQuery } from './queries/mbti/mbti.query';
 
 @Module({
   imports: [ConfigModule],
@@ -21,6 +22,7 @@ import { PersonalityQuestionQuery } from './queries/personality-question/persona
     ReportQuery,
     ProfessionQuestionQuery,
     PersonalityQuestionQuery,
+    MbtiQuery
   ],
   exports: [
     PrismaService,
@@ -32,6 +34,7 @@ import { PersonalityQuestionQuery } from './queries/personality-question/persona
     ReportQuery,
     ProfessionQuestionQuery,
     PersonalityQuestionQuery,
+    MbtiQuery
   ],
 })
 export class PrismaModule { }

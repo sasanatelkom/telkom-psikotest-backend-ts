@@ -5,7 +5,7 @@ export type ICreateParticipant = Pick<
     'name' | 'email' | 'phoneNumber' | 'schoolName' | 'class' | 'orientation'
 > & Partial<Pick<
     Participant,
-    'codeSds' | 'codeSds1' | 'codeSds2' | 'mbti'
+    'codeSds' | 'codeSds1' | 'codeSds2' | 'mbti' | 'mbtiNaration'
 >> & {
     participantOnFieldWork: {
         create: { idFieldWork: string; index: number }[];

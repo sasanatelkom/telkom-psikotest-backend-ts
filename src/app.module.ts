@@ -12,6 +12,7 @@ import { ParticipantModule } from './participant/participant.module';
 import { ReportModule } from './report/report.module';
 import { ProfessionQuestionModule } from './profession-question/profession-question.module';
 import { PersonalityQuestionModule } from './personality-question/personality-question.module';
+import { MbtiModule } from './mbti/mbti.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { PersonalityQuestionModule } from './personality-question/personality-qu
     ReportModule,
     ProfessionQuestionModule,
     PersonalityQuestionModule,
+    MbtiModule
   ],
   controllers: [],
   providers: [],

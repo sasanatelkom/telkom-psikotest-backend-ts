@@ -7,6 +7,7 @@ import { HelperModule } from '../helpers/helper.module';
 import { AuthModule } from '../auth/auth.module';
 import { JwtModule } from '@nestjs/jwt';
 import { FieldWorkModule } from '../field-work/field-work.module';
+import { MbtiModule } from '../mbti/mbti.module';
 
 @Module({
     imports: [
@@ -14,7 +15,8 @@ import { FieldWorkModule } from '../field-work/field-work.module';
         HelperModule,
         JwtModule.register({}),
         forwardRef(() => AuthModule),
-        FieldWorkModule
+        FieldWorkModule,
+        MbtiModule
     ],
     providers: [ParticipantService, ParticipantRepository],
     controllers: [ParticipantController],

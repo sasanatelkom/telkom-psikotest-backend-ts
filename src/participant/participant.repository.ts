@@ -4,12 +4,14 @@ import { CreateParticipantDto } from './dto/participant.dto';
 import { CustomError } from '../utils/error/custom-error';
 import { Participant } from '@prisma/client';
 import { FieldWorkRepository } from '../field-work/field-work.repository';
+import { MbtiRepository } from '../mbti/mbti.repository';
 
 @Injectable()
 export class ParticipantRepository {
     constructor(
         private readonly participantQuery: ParticipantQuery,
         private readonly fieldWorkRepository: FieldWorkRepository,
+        private readonly mbtiRepository: MbtiRepository,
     ) { }
 
     async getThrowParticipantById(id: string): Promise<Participant> {
@@ -72,7 +74,10 @@ export class ParticipantRepository {
         // Step 4: Calculate MBTI profile from personality answers
         const mbti = this.calculateMbti(answerPersonalityQuestions);
 
-        // Step 5: Create the participant with the necessary relations
+        // Step 5: Get MBTI Naration
+        const mbtiNaration = (await this.mbtiRepository.getThrowMbtiByCode(`${mbti}-${codeSds1}`)).naration
+
+        // Step 6: Create the participant with the necessary relations
         return await this.participantQuery.create({
             name,
             class: kelas,
@@ -84,6 +89,7 @@ export class ParticipantRepository {
             codeSds1,
             codeSds2,
             mbti,
+            mbtiNaration,
             participantOnFieldWork: {
                 create: fieldWorks.map(({ idFieldWork, index }) => ({
                     idFieldWork,
