@@ -78,32 +78,36 @@ export class ParticipantRepository {
         // Step 5: Get MBTI Naration
         const mbtiNaration = (await this.mbtiRepository.getThrowMbtiByCode(`${mbti}-${codeSds1}`)).naration
 
+        const test = this.calculateSuggestMajor({ orientation: "IDE_MANUSIA", codeSds: "CS", codeSds1: "C", codeSds2: "S", fieldWork1: "Kesehatan", fieldWork2: "Desain", fieldWork3: "Komputer", mbti: "ISTJ-C" })
+        console.log(test)
+        return test
+
         // Step 6: Create the participant with the necessary relations
-        return await this.participantQuery.create({
-            name,
-            class: kelas,
-            orientation,
-            schoolName,
-            email,
-            phoneNumber,
-            codeSds,
-            codeSds1,
-            codeSds2,
-            mbti,
-            mbtiNaration,
-            participantOnFieldWork: {
-                create: fieldWorks.map(({ idFieldWork, index }) => ({
-                    idFieldWork,
-                    index,
-                })),
-            },
-            participantOnProfessionQuestion: {
-                create: participantOnProfessionQuestionData,
-            },
-            participantOnPersonalityQuestion: {
-                create: participantOnPersonalityQuestionData,
-            },
-        });
+        // return await this.participantQuery.create({
+        //     name,
+        //     class: kelas,
+        //     orientation,
+        //     schoolName,
+        //     email,
+        //     phoneNumber,
+        //     codeSds,
+        //     codeSds1,
+        //     codeSds2,
+        //     mbti,
+        //     mbtiNaration,
+        //     participantOnFieldWork: {
+        //         create: fieldWorks.map(({ idFieldWork, index }) => ({
+        //             idFieldWork,
+        //             index,
+        //         })),
+        //     },
+        //     participantOnProfessionQuestion: {
+        //         create: participantOnProfessionQuestionData,
+        //     },
+        //     participantOnPersonalityQuestion: {
+        //         create: participantOnPersonalityQuestionData,
+        //     },
+        // });
     }
 
 
@@ -195,65 +199,84 @@ export class ParticipantRepository {
     |--------------------------------------------------------------------------
     */
 
-    calculateSuggestMajor(param:
-        {
-            mbti: string,
-            orientation: string,
-            fieldWork1: string,
-            fieldWork2: string,
-            fieldWork3: string,
-            codeSds: string,
-            codeSds1: string,
-            codeSds2: string,
-        }) {
-        // step 0: prepare data forumula & oriantatiton
-        const { orientation, fieldWork1, fieldWork2, fieldWork3, codeSds, codeSds1, codeSds2, mbti } = param
+    calculateSuggestMajor(param: {
+        mbti: string,
+        orientation: string,
+        fieldWork1: string,
+        fieldWork2: string,
+        fieldWork3: string,
+        codeSds: string,
+        codeSds1: string,
+        codeSds2: string,
+    }) {
+        // Step 0: prepare data formula & orientation
+        const { orientation, fieldWork1, fieldWork2, fieldWork3, codeSds, codeSds1, codeSds2, mbti } = param;
+
+        // Array to hold the results
+        const results = [];
 
         // Step 1: looping formula
         for (const formula of formulaCarierData) {
-
             // Step 2: concat orientation
             // ! kolom excel
-            const concatOrientation = `${orientation}-${formula.orientation}`
+            const concatOrientation = `${orientation}-${formula.orientation}`;
 
             // Step 3: get orientation score
             // ! kolom excel
-            const orientationScore = formulaOrientationData.find(item => item.category === concatOrientation).persentage;
+            const orientationScore = formulaOrientationData.find(item => item.category === concatOrientation)?.persentage ?? 0;
 
             // Step 4: get fieldWorkScore
             // ! kolom excel
-            const fieldWorkScore = this.calculateFormulaFieldWork([formula.cluster1, formula.cluster2, formula.cluster3], [fieldWork1, fieldWork2, fieldWork3])
+            const fieldWorkScore = this.calculateFormulaFieldWork([formula.cluster1, formula.cluster2, formula.cluster3], [fieldWork1, fieldWork2, fieldWork3]);
 
             // Step 5: get cc
             // ! kolom excel
-            const cc1 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork1)
-            const cc2 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork2)
-            const cc3 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork3)
+            const cc1 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork1);
+            const cc2 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork2);
+            const cc3 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork3);
 
-            // Step 6: calulate codeSds, if same give 300
-            const codeSdsScore = codeSds == formula.codeSDS ? 300 : 0
-            const codeSds11Score = codeSds1 == formula.code1 ? 50 : 40
-            const codeSds22Score = codeSds2 == formula.code2 ? 25 : 20
-            const codeSds12Score = codeSds1 == formula.code2 ? 25 : 0
-            const codeSds21Score = codeSds2 == formula.code1 ? 10 : 0
+            // Step 6: calculate codeSds, if same give 300
+            const codeSdsScore = codeSds === formula.codeSDS ? 300 : 0;
+            const codeSds11Score = codeSds1 === formula.code1 ? 50 : 40;
+            const codeSds22Score = codeSds2 === formula.code2 ? 25 : 20;
+            const codeSds12Score = codeSds1 === formula.code2 ? 25 : 0;
+            const codeSds21Score = codeSds2 === formula.code1 ? 10 : 0;
 
             // Step 7: calculate score
-            const score = orientationScore + fieldWorkScore + cc1 + cc2 + cc3 + codeSdsScore + codeSds11Score + codeSds22Score + codeSds12Score + codeSds21Score
+            const score = orientationScore + fieldWorkScore + cc1 + cc2 + cc3 + codeSdsScore + codeSds11Score + codeSds22Score + codeSds12Score + codeSds21Score;
 
             // Step 8: calculate score MBTI
-            const mbtiProfession = formulaProgramData.find(item => item.mbti === mbti && item.program === formula.program)
-            const mbtiScore = mbtiProfession ? 1000 : 0
+            const mbtiProfession = formulaProgramData.find(item => item.mbti === mbti && item.program === formula.program);
+            const mbtiScore = mbtiProfession ? 1000 : 0;
 
             // Step 9: calculate total score
-            const totalScore = score + mbtiScore
+            const totalScore = orientationScore + fieldWorkScore + cc1 + cc2 + cc3 + codeSdsScore + codeSds11Score + codeSds22Score + codeSds12Score + codeSds21Score + score + mbtiScore;
 
-            return {
+            results.push({
                 program: formula.program,
-                score: totalScore
-            }
+                concatOrientation,
+                orientationScore,
+                fieldWorkScore,
+                cc1,
+                cc2,
+                cc3,
+                codeSdsScore,
+                codeSds11Score,
+                codeSds22Score,
+                codeSds12Score,
+                codeSds21Score,
+                score,
+                mbtiScore,
+                totalScore,
+            });
+
+            break;
         }
 
+        // Return the array of results
+        return results;
     }
+
 
     calculateFormulaFieldWork(data: string[], criteria: string[]): number {
         // Memastikan bahwa criteria memiliki tepat 3 elemen
