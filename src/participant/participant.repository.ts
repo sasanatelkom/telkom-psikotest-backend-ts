@@ -5,7 +5,7 @@ import { CustomError } from '../utils/error/custom-error';
 import { Participant } from '@prisma/client';
 import { FieldWorkRepository } from '../field-work/field-work.repository';
 import { MbtiRepository } from '../mbti/mbti.repository';
-import { formulaCarierData, formulaOrientationData } from '../../prisma/datas/formula-carier.data';
+import { formulaCarierData, formulaOrientationData, formulaProgramData } from '../../prisma/datas/formula-carier.data';
 
 @Injectable()
 export class ParticipantRepository {
@@ -197,6 +197,7 @@ export class ParticipantRepository {
 
     calculateSuggestMajor(param:
         {
+            mbti: string,
             orientation: string,
             fieldWork1: string,
             fieldWork2: string,
@@ -206,7 +207,7 @@ export class ParticipantRepository {
             codeSds2: string,
         }) {
         // step 0: prepare data forumula & oriantatiton
-        const { orientation, fieldWork1, fieldWork2, fieldWork3, codeSds, codeSds1, codeSds2 } = param
+        const { orientation, fieldWork1, fieldWork2, fieldWork3, codeSds, codeSds1, codeSds2, mbti } = param
 
         // Step 1: looping formula
         for (const formula of formulaCarierData) {
@@ -239,7 +240,17 @@ export class ParticipantRepository {
             // Step 7: calculate score
             const score = orientationScore + fieldWorkScore + cc1 + cc2 + cc3 + codeSdsScore + codeSds11Score + codeSds22Score + codeSds12Score + codeSds21Score
 
-            // Step 8:
+            // Step 8: calculate score MBTI
+            const mbtiProfession = formulaProgramData.find(item => item.mbti === mbti && item.program === formula.program)
+            const mbtiScore = mbtiProfession ? 1000 : 0
+
+            // Step 9: calculate total score
+            const totalScore = score + mbtiScore
+
+            return {
+                program: formula.program,
+                score: totalScore
+            }
         }
 
     }

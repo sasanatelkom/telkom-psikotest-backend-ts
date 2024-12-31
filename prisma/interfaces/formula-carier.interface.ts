@@ -15,3 +15,8 @@ export interface IFormulaOrientation {
     category: String,
     persentage: number
 }
+
+export interface IFormulaProgram {
+    mbti: string,
+    program: string
+}
