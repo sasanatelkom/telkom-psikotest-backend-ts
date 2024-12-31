@@ -78,10 +78,32 @@ export class ParticipantRepository {
         // Step 5: Get MBTI Naration
         const mbtiNaration = (await this.mbtiRepository.getThrowMbtiByCode(`${mbti}-${codeSds1}`)).naration
 
-        const test = this.calculateSuggestMajor({ orientation: "IDE_MANUSIA", codeSds: "CS", codeSds1: "C", codeSds2: "S", fieldWork1: "Kesehatan", fieldWork2: "Desain", fieldWork3: "Komputer", mbti: "ISTJ-C" })
-        console.log(test)
-        return test
+        const suggestMajor = this.calculateSuggestMajor({
+            orientation: "IDE_MANUSIA",
+            codeSds: "CS",
+            codeSds1: "C",
+            codeSds2: "S",
+            fieldWork1: "Kesehatan",
+            fieldWork2: "Desain",
+            fieldWork3: "Komputer",
+            mbti: "ISTJ-C"
+        });
 
+        // Gunakan reduce untuk mengambil nilai tertinggi per program
+        const highestScoresPerProgram = suggestMajor.reduce((acc, current) => {
+            // Cek jika program sudah ada di accumulator
+            if (!acc[current.program] || current.totalScore > acc[current.program].totalScore) {
+                acc[current.program] = current;
+            }
+            return acc;
+        }, {} as { [key: string]: { program: string; totalScore: number } });
+
+        // Mengambil array dari accumulator dan mengurutkan berdasarkan totalScore tertinggi
+        const top5Programs = Object.values(highestScoresPerProgram)
+            .sort((a, b) => (b as { totalScore: number }).totalScore - (a as { totalScore: number }).totalScore)
+            .slice(0, 5);
+
+        return top5Programs
         // Step 6: Create the participant with the necessary relations
         // return await this.participantQuery.create({
         //     name,
@@ -254,23 +276,8 @@ export class ParticipantRepository {
 
             results.push({
                 program: formula.program,
-                concatOrientation,
-                orientationScore,
-                fieldWorkScore,
-                cc1,
-                cc2,
-                cc3,
-                codeSdsScore,
-                codeSds11Score,
-                codeSds22Score,
-                codeSds12Score,
-                codeSds21Score,
-                score,
-                mbtiScore,
                 totalScore,
             });
-
-            break;
         }
 
         // Return the array of results
