@@ -10,3 +10,8 @@ export interface IFormulaCarier {
     code2: string;
     program: string;
 }
+
+export interface IFormulaOrientation {
+    category: String,
+    persentage: number
+}

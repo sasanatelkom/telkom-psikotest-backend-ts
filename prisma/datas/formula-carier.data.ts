@@ -1,4 +1,51 @@
-import { IFormulaCarier } from "../interfaces/formula-carier.interface";
+import { IFormulaCarier, IFormulaOrientation } from "../interfaces/formula-carier.interface";
+
+export const formulaOrientationData: IFormulaOrientation[] = [
+    { category: 'DATA_MANUSIA-DATA_MANUSIA', persentage: 85 },
+    { category: 'DATA_MANUSIA-DATA_MANUSIA-DATA_MANUSIA', persentage: 100 },
+    { category: 'DATA_MANUSIA-DATA_MANUSIA-DATA_TEKNOLOGI', persentage: 65 },
+    { category: 'DATA_MANUSIA-MANUSIA_TEKNOLOGI', persentage: 85 },
+    { category: 'DATA_MANUSIA-IDE_MANUSIA', persentage: 65 },
+    { category: 'DATA_MANUSIA-MANUSIA_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 65 },
+    { category: 'DATA_MANUSIA-IDE_TEKNOLOGI', persentage: 40 },
+    { category: 'DATA_MANUSIA-DATA_TEKNOLOGI', persentage: 40 },
+
+    { category: 'DATA_TEKNOLOGI-DATA_MANUSIA', persentage: 85 },
+    { category: 'DATA_TEKNOLOGI-DATA_MANUSIA-DATA_MANUSIA', persentage: 65 },
+    { category: 'DATA_TEKNOLOGI-DATA_MANUSIA-DATA_TEKNOLOGI', persentage: 100 },
+    { category: 'DATA_TEKNOLOGI-MANUSIA_TEKNOLOGI', persentage: 50 },
+    { category: 'DATA_TEKNOLOGI-IDE_MANUSIA', persentage: 25 },
+    { category: 'DATA_TEKNOLOGI-MANUSIA_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 65 },
+    { category: 'DATA_TEKNOLOGI-IDE_TEKNOLOGI', persentage: 65 },
+    { category: 'DATA_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 85 },
+
+    { category: 'IDE_MANUSIA-DATA_MANUSIA', persentage: 40 },
+    { category: 'IDE_MANUSIA-DATA_MANUSIA-DATA_MANUSIA', persentage: 65 },
+    { category: 'IDE_MANUSIA-DATA_MANUSIA-DATA_TEKNOLOGI', persentage: 25 },
+    { category: 'IDE_MANUSIA-MANUSIA_TEKNOLOGI', persentage: 85 },
+    { category: 'IDE_MANUSIA-IDE_MANUSIA', persentage: 100 },
+    { category: 'IDE_MANUSIA-MANUSIA_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 65 },
+    { category: 'IDE_MANUSIA-IDE_TEKNOLOGI', persentage: 65 },
+    { category: 'IDE_MANUSIA-DATA_TEKNOLOGI', persentage: 25 },
+
+    { category: 'MANUSIA_TEKNOLOGI-DATA_MANUSIA', persentage: 40 },
+    { category: 'MANUSIA_TEKNOLOGI-DATA_MANUSIA-DATA_MANUSIA', persentage: 40 },
+    { category: 'MANUSIA_TEKNOLOGI-DATA_MANUSIA-DATA_TEKNOLOGI', persentage: 65 },
+    { category: 'MANUSIA_TEKNOLOGI-MANUSIA_TEKNOLOGI', persentage: 85 },
+    { category: 'MANUSIA_TEKNOLOGI-IDE_MANUSIA', persentage: 65 },
+    { category: 'MANUSIA_TEKNOLOGI-MANUSIA_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 100 },
+    { category: 'MANUSIA_TEKNOLOGI-IDE_TEKNOLOGI', persentage: 65 },
+    { category: 'MANUSIA_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 85 },
+
+    { category: 'IDE_TEKNOLOGI-DATA_MANUSIA', persentage: 40 },
+    { category: 'IDE_TEKNOLOGI-DATA_MANUSIA-DATA_MANUSIA', persentage: 40 },
+    { category: 'IDE_TEKNOLOGI-DATA_MANUSIA-DATA_TEKNOLOGI', persentage: 65 },
+    { category: 'IDE_TEKNOLOGI-MANUSIA_TEKNOLOGI', persentage: 50 },
+    { category: 'IDE_TEKNOLOGI-IDE_MANUSIA', persentage: 65 },
+    { category: 'IDE_TEKNOLOGI-MANUSIA_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 65 },
+    { category: 'IDE_TEKNOLOGI-IDE_TEKNOLOGI', persentage: 100 },
+    { category: 'IDE_TEKNOLOGI-DATA_TEKNOLOGI', persentage: 85 }
+];
 
 export const formulaCarierData: IFormulaCarier[] = [
     {

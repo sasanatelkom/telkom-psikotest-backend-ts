@@ -5,6 +5,7 @@ import { CustomError } from '../utils/error/custom-error';
 import { Participant } from '@prisma/client';
 import { FieldWorkRepository } from '../field-work/field-work.repository';
 import { MbtiRepository } from '../mbti/mbti.repository';
+import { formulaCarierData, formulaOrientationData } from '../../prisma/datas/formula-carier.data';
 
 @Injectable()
 export class ParticipantRepository {
@@ -113,7 +114,7 @@ export class ParticipantRepository {
 
     /*
    |--------------------------------------------------------------------------
-   | Helper
+   | Helper Prefession
    |--------------------------------------------------------------------------
    */
     calculateProfessionStats(answerProfessionQuestions: { codeProfession: string; timeTrack: number }[]) {
@@ -149,6 +150,11 @@ export class ParticipantRepository {
         return { codeSds, codeSds1, codeSds2 };
     }
 
+    /*
+   |--------------------------------------------------------------------------
+   | Helper MBTI
+   |--------------------------------------------------------------------------
+   */
     calculateMbti(answerPersonalityQuestions: {
         opsi: string;
         code: string;
@@ -157,15 +163,13 @@ export class ParticipantRepository {
     }[]): string {
         const groupCounts = {};
 
-        // Count occurrences of each code within each groupCodeQuestion
         answerPersonalityQuestions.forEach(({ groupCodeQuestion, code }) => {
             if (!groupCounts[groupCodeQuestion]) {
-                groupCounts[groupCodeQuestion] = { I: 0, E: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 }; // Initialize all groups with zero counts
+                groupCounts[groupCodeQuestion] = { I: 0, E: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 };
             }
             groupCounts[groupCodeQuestion][code]++;
         });
 
-        // Calculate MBTI based on the highest counts in each group
         let mbti = '';
         const mbtiGroups = ['IE', 'SN', 'TF', 'PJ']; // List of MBTI group codes
 
@@ -183,5 +187,95 @@ export class ParticipantRepository {
         });
 
         return mbti;
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | Helper Suggest Major
+    |--------------------------------------------------------------------------
+    */
+
+    calculateSuggestMajor(param:
+        {
+            orientation: string,
+            fieldWork1: string,
+            fieldWork2: string,
+            fieldWork3: string,
+            codeSds: string,
+            codeSds1: string,
+            codeSds2: string,
+        }) {
+        // step 0: prepare data forumula & oriantatiton
+        const { orientation, fieldWork1, fieldWork2, fieldWork3, codeSds, codeSds1, codeSds2 } = param
+
+        // Step 1: looping formula
+        for (const formula of formulaCarierData) {
+
+            // Step 2: concat orientation
+            // ! kolom excel
+            const concatOrientation = `${orientation}-${formula.orientation}`
+
+            // Step 3: get orientation score
+            // ! kolom excel
+            const orientationScore = formulaOrientationData.find(item => item.category === concatOrientation).persentage;
+
+            // Step 4: get fieldWorkScore
+            // ! kolom excel
+            const fieldWorkScore = this.calculateFormulaFieldWork([formula.cluster1, formula.cluster2, formula.cluster3], [fieldWork1, fieldWork2, fieldWork3])
+
+            // Step 5: get cc
+            // ! kolom excel
+            const cc1 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork1)
+            const cc2 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork2)
+            const cc3 = this.calculateCC([formula.cluster1, formula.cluster2, formula.cluster3], fieldWork3)
+
+            // Step 6: calulate codeSds, if same give 300
+            const codeSdsScore = codeSds == formula.codeSDS ? 300 : 0
+            const codeSds11Score = codeSds1 == formula.code1 ? 50 : 40
+            const codeSds22Score = codeSds2 == formula.code2 ? 25 : 20
+            const codeSds12Score = codeSds1 == formula.code2 ? 25 : 0
+            const codeSds21Score = codeSds2 == formula.code1 ? 10 : 0
+
+            // Step 7: calculate score
+            const score = orientationScore + fieldWorkScore + cc1 + cc2 + cc3 + codeSdsScore + codeSds11Score + codeSds22Score + codeSds12Score + codeSds21Score
+
+            // Step 8:
+        }
+
+    }
+
+    calculateFormulaFieldWork(data: string[], criteria: string[]): number {
+        // Memastikan bahwa criteria memiliki tepat 3 elemen
+        if (criteria.length !== 3) {
+            throw new Error("Criteria array must contain exactly 3 elements");
+        }
+
+        const [criteria1, criteria2, criteria3] = criteria;
+
+        // Menghitung jumlah kemunculan masing-masing kriteria dalam data
+        const countCriteria1 = data.filter(item => item === criteria1).length;
+        const countCriteria2 = data.filter(item => item === criteria2).length;
+        const countCriteria3 = data.filter(item => item === criteria3).length;
+
+        // Menghitung hasil sesuai dengan rumus Excel
+        const result = (countCriteria1 * 100) + (countCriteria2 * 100) + (countCriteria3 * 100);
+
+        return result;
+    }
+
+    calculateCC(data: string[], criteria: string): number {
+        if (data.length !== 3) {
+            throw new Error("Data array must contain exactly 3 elements");
+        }
+
+        // Menghitung jumlah kemunculan kriteria dalam masing-masing data
+        const countB7 = data[0] === criteria ? 1 : 0;
+        const countC7 = data[1] === criteria ? 1 : 0;
+        const countD7 = data[2] === criteria ? 1 : 0;
+
+        // Perhitungan sesuai dengan rumus Excel
+        const result = (countB7 * 100) + (countC7 * 75) + (countD7 * 50);
+
+        return result;
     }
 }

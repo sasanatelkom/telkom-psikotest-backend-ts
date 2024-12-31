@@ -11,6 +11,7 @@ export class ParticipantQuery extends DbService {
             include: {
                 participantOnFieldWork: {
                     select: {
+                        index: true,
                         fieldWork: true
                     }
                 }
