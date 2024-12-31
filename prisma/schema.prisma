@@ -54,6 +54,7 @@ model Participant {
 
   mbti                             String?
   mbtiNaration                     String?                            @db.Text
+  suggestPrograms                  String?                            @db.Text
   createdAt                        DateTime                           @default(now())
   updatedAt                        DateTime                           @updatedAt
   participantOnFieldWork           ParticipantOnFieldWork[]

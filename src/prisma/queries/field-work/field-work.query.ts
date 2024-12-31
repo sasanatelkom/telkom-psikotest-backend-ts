@@ -15,7 +15,7 @@ export class FieldWorkQuery extends DbService {
         return await this.prisma.fieldWork.findMany();
     }
 
-    async checkAllIdsExist(ids: string[]): Promise<boolean> {
+    async checkAllIdsExist(ids: string[]) {
         const fieldWorks = await this.prisma.fieldWork.findMany({
             where: {
                 id: {
@@ -24,8 +24,10 @@ export class FieldWorkQuery extends DbService {
             },
             select: {
                 id: true,
+                name: true
             },
         });
-        return fieldWorks.length === ids.length;
+        if (fieldWorks.length === ids.length) return fieldWorks;
+        return null
     }
 }

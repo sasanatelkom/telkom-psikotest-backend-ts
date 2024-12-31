@@ -19,11 +19,11 @@ export class FieldWorkRepository {
         return await this.fieldWorkQuery.findAll();
     }
 
-    async checkAllFieldWorksExist(ids: string[]): Promise<boolean> {
+    async checkAllFieldWorksExist(ids: string[]) {
         const allExist = await this.fieldWorkQuery.checkAllIdsExist(ids);
         if (!allExist) {
             throw new CustomError('Beberapa ID Bidang Pekerjaan tidak ditemukan', 404);
         }
-        return true;
+        return allExist;
     }
 }

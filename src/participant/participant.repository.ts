@@ -39,8 +39,11 @@ export class ParticipantRepository {
         } = dto;
 
         // Step 1: Validate fieldWorkIds to ensure all field works exist
-        const fieldWorkIds = fieldWorks.map((fieldWork) => fieldWork.idFieldWork);
-        await this.fieldWorkRepository.checkAllFieldWorksExist(fieldWorkIds);
+        const fieldWorkIds = fieldWorks
+            .sort((a, b) => a.index - b.index)
+            .map((fieldWork) => fieldWork.idFieldWork)
+
+        const fieldWorksDb = await this.fieldWorkRepository.checkAllFieldWorksExist(fieldWorkIds);
 
         // Step 2: Calculate and sort profession stats, and get top two professions
         const professionStats = this.calculateProfessionStats(answerProfessionQuestions);
@@ -79,14 +82,14 @@ export class ParticipantRepository {
         const mbtiNaration = (await this.mbtiRepository.getThrowMbtiByCode(`${mbti}-${codeSds1}`)).naration
 
         const suggestMajor = this.calculateSuggestMajor({
-            orientation: "IDE_MANUSIA",
-            codeSds: "CS",
-            codeSds1: "C",
-            codeSds2: "S",
-            fieldWork1: "Kesehatan",
-            fieldWork2: "Desain",
-            fieldWork3: "Komputer",
-            mbti: "ISTJ-C"
+            orientation,
+            codeSds,
+            codeSds1,
+            codeSds2,
+            fieldWork1: fieldWorksDb.find(item => item.id == fieldWorks[0].idFieldWork).name,
+            fieldWork2: fieldWorksDb.find(item => item.id == fieldWorks[1].idFieldWork).name,
+            fieldWork3: fieldWorksDb.find(item => item.id == fieldWorks[2].idFieldWork).name,
+            mbti: `${mbti}-${codeSds1}`
         });
 
         // Gunakan reduce untuk mengambil nilai tertinggi per program
@@ -103,33 +106,33 @@ export class ParticipantRepository {
             .sort((a, b) => (b as { totalScore: number }).totalScore - (a as { totalScore: number }).totalScore)
             .slice(0, 5);
 
-        return top5Programs
         // Step 6: Create the participant with the necessary relations
-        // return await this.participantQuery.create({
-        //     name,
-        //     class: kelas,
-        //     orientation,
-        //     schoolName,
-        //     email,
-        //     phoneNumber,
-        //     codeSds,
-        //     codeSds1,
-        //     codeSds2,
-        //     mbti,
-        //     mbtiNaration,
-        //     participantOnFieldWork: {
-        //         create: fieldWorks.map(({ idFieldWork, index }) => ({
-        //             idFieldWork,
-        //             index,
-        //         })),
-        //     },
-        //     participantOnProfessionQuestion: {
-        //         create: participantOnProfessionQuestionData,
-        //     },
-        //     participantOnPersonalityQuestion: {
-        //         create: participantOnPersonalityQuestionData,
-        //     },
-        // });
+        return await this.participantQuery.create({
+            name,
+            class: kelas,
+            orientation,
+            schoolName,
+            email,
+            phoneNumber,
+            codeSds,
+            codeSds1,
+            codeSds2,
+            mbti,
+            mbtiNaration,
+            suggestPrograms: top5Programs.toString(),
+            participantOnFieldWork: {
+                create: fieldWorks.map(({ idFieldWork, index }) => ({
+                    idFieldWork,
+                    index,
+                })),
+            },
+            participantOnProfessionQuestion: {
+                create: participantOnProfessionQuestionData,
+            },
+            participantOnPersonalityQuestion: {
+                create: participantOnPersonalityQuestionData,
+            },
+        });
     }
 
 
