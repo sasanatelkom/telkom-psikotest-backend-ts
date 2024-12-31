@@ -119,7 +119,7 @@ export class ParticipantRepository {
             codeSds2,
             mbti,
             mbtiNaration,
-            suggestPrograms: top5Programs.toString(),
+            suggestPrograms: JSON.stringify(top5Programs),
             participantOnFieldWork: {
                 create: fieldWorks.map(({ idFieldWork, index }) => ({
                     idFieldWork,
