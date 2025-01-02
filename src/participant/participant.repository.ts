@@ -6,7 +6,8 @@ import { Participant } from '@prisma/client';
 import { FieldWorkRepository } from '../field-work/field-work.repository';
 import { MbtiRepository } from '../mbti/mbti.repository';
 import { formulaCarierData, formulaOrientationData, formulaProgramData } from '../../prisma/datas/formula-carier.data';
-import { MajorRepository } from 'src/major/major.repository';
+import { MajorRepository } from '../major/major.repository';
+import { MailService } from '../mail/mail.service';
 
 @Injectable()
 export class ParticipantRepository {
@@ -15,6 +16,7 @@ export class ParticipantRepository {
         private readonly fieldWorkRepository: FieldWorkRepository,
         private readonly mbtiRepository: MbtiRepository,
         private readonly majorRepository: MajorRepository,
+        private readonly mailService: MailService,
     ) { }
 
     async getThrowParticipantById(id: string): Promise<Participant> {
@@ -110,7 +112,7 @@ export class ParticipantRepository {
         const top5Majors = await this.majorRepository.findByNames(top5Programs.map(item => item.program));
 
         // Step 6: Create the participant with the necessary relations
-        return await this.participantQuery.create({
+        const participant = await this.participantQuery.create({
             name,
             class: kelas,
             orientation,
@@ -136,6 +138,9 @@ export class ParticipantRepository {
                 create: participantOnPersonalityQuestionData,
             },
         });
+
+        // Step 7: Send Email Result
+        this.mailService.sendResultTest({ email, name, naration: mbtiNaration, suggestMajor: top5Majors });
     }
 
 

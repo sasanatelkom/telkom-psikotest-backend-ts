@@ -13,6 +13,7 @@ import { ReportModule } from './report/report.module';
 import { ProfessionQuestionModule } from './profession-question/profession-question.module';
 import { PersonalityQuestionModule } from './personality-question/personality-question.module';
 import { MbtiModule } from './mbti/mbti.module';
+import { MailModule } from './mail/mail.module';
 
 @Module({
   imports: [
@@ -32,7 +33,8 @@ import { MbtiModule } from './mbti/mbti.module';
     ReportModule,
     ProfessionQuestionModule,
     PersonalityQuestionModule,
-    MbtiModule
+    MbtiModule,
+    MailModule
   ],
   controllers: [],
   providers: [],
