@@ -6,6 +6,7 @@ import { Participant } from '@prisma/client';
 import { FieldWorkRepository } from '../field-work/field-work.repository';
 import { MbtiRepository } from '../mbti/mbti.repository';
 import { formulaCarierData, formulaOrientationData, formulaProgramData } from '../../prisma/datas/formula-carier.data';
+import { MajorRepository } from 'src/major/major.repository';
 
 @Injectable()
 export class ParticipantRepository {
@@ -13,6 +14,7 @@ export class ParticipantRepository {
         private readonly participantQuery: ParticipantQuery,
         private readonly fieldWorkRepository: FieldWorkRepository,
         private readonly mbtiRepository: MbtiRepository,
+        private readonly majorRepository: MajorRepository,
     ) { }
 
     async getThrowParticipantById(id: string): Promise<Participant> {
@@ -92,19 +94,20 @@ export class ParticipantRepository {
             mbti: `${mbti}-${codeSds1}`
         });
 
-        // Gunakan reduce untuk mengambil nilai tertinggi per program
         const highestScoresPerProgram = suggestMajor.reduce((acc, current) => {
-            // Cek jika program sudah ada di accumulator
             if (!acc[current.program] || current.totalScore > acc[current.program].totalScore) {
                 acc[current.program] = current;
             }
             return acc;
-        }, {} as { [key: string]: { program: string; totalScore: number } });
+        }, {} as Record<string, { program: string; totalScore: number }>);
 
-        // Mengambil array dari accumulator dan mengurutkan berdasarkan totalScore tertinggi
         const top5Programs = Object.values(highestScoresPerProgram)
-            .sort((a, b) => (b as { totalScore: number }).totalScore - (a as { totalScore: number }).totalScore)
-            .slice(0, 5);
+            .map((program) => program as { program: string; totalScore: number })
+            .sort((a, b) => b.totalScore - a.totalScore)
+            .slice(0, 5)
+
+        // get major on db
+        const top5Majors = await this.majorRepository.findByNames(top5Programs.map(item => item.program));
 
         // Step 6: Create the participant with the necessary relations
         return await this.participantQuery.create({
@@ -119,7 +122,7 @@ export class ParticipantRepository {
             codeSds2,
             mbti,
             mbtiNaration,
-            suggestPrograms: JSON.stringify(top5Programs),
+            suggestPrograms: JSON.stringify(top5Majors),
             participantOnFieldWork: {
                 create: fieldWorks.map(({ idFieldWork, index }) => ({
                     idFieldWork,

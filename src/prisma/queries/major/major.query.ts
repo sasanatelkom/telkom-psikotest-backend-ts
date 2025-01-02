@@ -23,4 +23,21 @@ export class MajorQuery extends DbService {
     async delete(id: string) {
         return await this.prisma.major.delete({ where: { id } })
     }
+
+    async findByNames(names: string[]) {
+        const conditions = names.map((name) => {
+            const [degree, majorName] = name.split('-');
+            return {
+                degree,
+                name: majorName
+            };
+        });
+
+        return await this.prisma.major.findMany({
+            where: {
+                OR: conditions
+            }
+        });
+    }
+
 }

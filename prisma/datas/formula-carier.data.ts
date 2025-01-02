@@ -57,7 +57,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Administrasi Bisnis",
+        program: "S1-Administrasi Bisnis",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -67,7 +67,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Administrasi Bisnis",
+        program: "S1-Administrasi Bisnis",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -77,7 +77,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Administrasi Bisnis",
+        program: "S1-Administrasi Bisnis",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -87,7 +87,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IE",
         code1: "I",
         code2: "E",
-        program: "S1 Administrasi Bisnis",
+        program: "S1-Administrasi Bisnis",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -97,7 +97,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EI",
         code1: "E",
         code2: "I",
-        program: "S1 Administrasi Bisnis",
+        program: "S1-Administrasi Bisnis",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -107,7 +107,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SE",
         code1: "S",
         code2: "E",
-        program: "S1 Administrasi Bisnis",
+        program: "S1-Administrasi Bisnis",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -117,7 +117,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "ES",
         code1: "E",
         code2: "S",
-        program: "S1 Administrasi Bisnis",
+        program: "S1-Administrasi Bisnis",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -127,7 +127,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Akuntansi",
+        program: "S1-Akuntansi",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -137,7 +137,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Akuntansi",
+        program: "S1-Akuntansi",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -147,7 +147,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Akuntansi",
+        program: "S1-Akuntansi",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -157,7 +157,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Akuntansi",
+        program: "S1-Akuntansi",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -167,7 +167,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Bisnis Digital",
+        program: "S1-Bisnis Digital",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -177,7 +177,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Bisnis Digital",
+        program: "S1-Bisnis Digital",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -187,7 +187,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Bisnis Digital",
+        program: "S1-Bisnis Digital",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -197,7 +197,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Bisnis Digital",
+        program: "S1-Bisnis Digital",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -207,7 +207,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Desain Interior",
+        program: "S1-Desain Interior",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -217,7 +217,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Desain Interior",
+        program: "S1-Desain Interior",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -227,7 +227,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Desain Interior",
+        program: "S1-Desain Interior",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -237,7 +237,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Desain Interior",
+        program: "S1-Desain Interior",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -247,7 +247,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AS",
         code1: "A",
         code2: "S",
-        program: "S1 Desain Interior",
+        program: "S1-Desain Interior",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -257,7 +257,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SA",
         code1: "S",
         code2: "A",
-        program: "S1 Desain Interior",
+        program: "S1-Desain Interior",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -267,7 +267,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Desain Produk & Inovasi",
+        program: "S1-Desain Produk & Inovasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -277,7 +277,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Desain Produk & Inovasi",
+        program: "S1-Desain Produk & Inovasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -287,7 +287,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Desain Produk & Inovasi",
+        program: "S1-Desain Produk & Inovasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -297,7 +297,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IA",
         code1: "I",
         code2: "A",
-        program: "S1 Desain Produk & Inovasi",
+        program: "S1-Desain Produk & Inovasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -307,7 +307,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AI",
         code1: "A",
         code2: "I",
-        program: "S1 Desain Produk & Inovasi",
+        program: "S1-Desain Produk & Inovasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -317,7 +317,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Film dan Animasi",
+        program: "S1-Film dan Animasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -327,7 +327,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Film dan Animasi",
+        program: "S1-Film dan Animasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -337,7 +337,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AC",
         code1: "A",
         code2: "C",
-        program: "S1 Film dan Animasi",
+        program: "S1-Film dan Animasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -347,7 +347,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Film dan Animasi",
+        program: "S1-Film dan Animasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -357,7 +357,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AS",
         code1: "A",
         code2: "S",
-        program: "S1 Film dan Animasi",
+        program: "S1-Film dan Animasi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -367,7 +367,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Digital Public Relations",
+        program: "S1-Digital Public Relations",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -377,7 +377,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Digital Public Relations",
+        program: "S1-Digital Public Relations",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -387,7 +387,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SA",
         code1: "S",
         code2: "A",
-        program: "S1 Digital Public Relations",
+        program: "S1-Digital Public Relations",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -397,7 +397,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AS",
         code1: "A",
         code2: "S",
-        program: "S1 Digital Public Relations",
+        program: "S1-Digital Public Relations",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -407,7 +407,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "ES",
         code1: "E",
         code2: "S",
-        program: "S1 Digital Public Relations",
+        program: "S1-Digital Public Relations",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -417,7 +417,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SE",
         code1: "S",
         code2: "E",
-        program: "S1 Digital Public Relations",
+        program: "S1-Digital Public Relations",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -427,7 +427,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Ilmu Komunikasi",
+        program: "S1-Ilmu Komunikasi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -437,7 +437,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Ilmu Komunikasi",
+        program: "S1-Ilmu Komunikasi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -447,7 +447,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SA",
         code1: "S",
         code2: "A",
-        program: "S1 Ilmu Komunikasi",
+        program: "S1-Ilmu Komunikasi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -457,7 +457,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AS",
         code1: "A",
         code2: "S",
-        program: "S1 Ilmu Komunikasi",
+        program: "S1-Ilmu Komunikasi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -467,7 +467,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IS",
         code1: "I",
         code2: "S",
-        program: "S1 Ilmu Komunikasi",
+        program: "S1-Ilmu Komunikasi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -477,7 +477,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SI",
         code1: "S",
         code2: "I",
-        program: "S1 Ilmu Komunikasi",
+        program: "S1-Ilmu Komunikasi",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -487,7 +487,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Informatika",
+        program: "S1-Informatika",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -497,7 +497,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Informatika",
+        program: "S1-Informatika",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -507,7 +507,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Informatika",
+        program: "S1-Informatika",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -517,7 +517,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Informatika",
+        program: "S1-Informatika",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -527,7 +527,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Informatika",
+        program: "S1-Informatika",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -537,7 +537,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Informatika",
+        program: "S1-Informatika",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -547,7 +547,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Kriya (Fashion and Textile Design)",
+        program: "S1-Kriya (Fashion and Textile Design)",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -557,7 +557,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AC",
         code1: "A",
         code2: "C",
-        program: "S1 Kriya (Fashion and Textile Design)",
+        program: "S1-Kriya (Fashion and Textile Design)",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -567,7 +567,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Kriya (Fashion and Textile Design)",
+        program: "S1-Kriya (Fashion and Textile Design)",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -577,7 +577,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Kriya (Fashion and Textile Design)",
+        program: "S1-Kriya (Fashion and Textile Design)",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -587,7 +587,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Kriya (Fashion and Textile Design)",
+        program: "S1-Kriya (Fashion and Textile Design)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -597,7 +597,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -607,7 +607,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -617,7 +617,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -627,7 +627,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -637,7 +637,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IE",
         code1: "I",
         code2: "E",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -647,7 +647,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EI",
         code1: "E",
         code2: "I",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -657,7 +657,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -667,7 +667,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
+        program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -677,7 +677,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Leisure Management",
+        program: "S1-Leisure Management",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -687,7 +687,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SI",
         code1: "S",
         code2: "I",
-        program: "S1 Leisure Management",
+        program: "S1-Leisure Management",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -697,7 +697,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IS",
         code1: "I",
         code2: "S",
-        program: "S1 Leisure Management",
+        program: "S1-Leisure Management",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -707,7 +707,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Leisure Management",
+        program: "S1-Leisure Management",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -717,7 +717,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Leisure Management",
+        program: "S1-Leisure Management",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -727,7 +727,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Leisure Management",
+        program: "S1-Leisure Management",
     },
     {
         orientation: "DATA_MANUSIA",
@@ -737,7 +737,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Leisure Management",
+        program: "S1-Leisure Management",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -747,7 +747,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "D3 Digital Marketing",
+        program: "D3-Digital Marketing",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -757,7 +757,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "D3 Digital Marketing",
+        program: "D3-Digital Marketing",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -767,7 +767,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "D3 Digital Marketing",
+        program: "D3-Digital Marketing",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -777,7 +777,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CA",
         code1: "C",
         code2: "A",
-        program: "D3 Digital Marketing",
+        program: "D3-Digital Marketing",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -787,7 +787,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "D3 Digital Marketing",
+        program: "D3-Digital Marketing",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -797,7 +797,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "ES",
         code1: "E",
         code2: "S",
-        program: "D3 Digital Marketing",
+        program: "D3-Digital Marketing",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -807,7 +807,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SE",
         code1: "S",
         code2: "E",
-        program: "D3 Digital Marketing",
+        program: "D3-Digital Marketing",
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -817,7 +817,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Manajemen Rekayasa Industri",
+        program: "S1-Manajemen Rekayasa Industri",
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -827,7 +827,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Manajemen Rekayasa Industri",
+        program: "S1-Manajemen Rekayasa Industri",
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -837,7 +837,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Manajemen Rekayasa Industri",
+        program: "S1-Manajemen Rekayasa Industri",
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -847,7 +847,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Manajemen Rekayasa Industri",
+        program: "S1-Manajemen Rekayasa Industri",
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -857,7 +857,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Manajemen Rekayasa Industri",
+        program: "S1-Manajemen Rekayasa Industri",
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -867,7 +867,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Manajemen Rekayasa Industri",
+        program: "S1-Manajemen Rekayasa Industri",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -877,7 +877,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AC",
         code1: "A",
         code2: "C",
-        program: "S1 Digital Content Broadcasting",
+        program: "S1-Digital Content Broadcasting",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -887,7 +887,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Digital Content Broadcasting",
+        program: "S1-Digital Content Broadcasting",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -897,7 +897,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Digital Content Broadcasting",
+        program: "S1-Digital Content Broadcasting",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -907,7 +907,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Digital Content Broadcasting",
+        program: "S1-Digital Content Broadcasting",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -917,7 +917,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Digital Content Broadcasting",
+        program: "S1-Digital Content Broadcasting",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -927,7 +927,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Digital Content Broadcasting",
+        program: "S1-Digital Content Broadcasting",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -937,7 +937,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Digital Content Broadcasting",
+        program: "S1-Digital Content Broadcasting",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -947,7 +947,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "D3 Hospitality and Culinary Art",
+        program: "D3-Hospitality and Culinary Art",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -957,7 +957,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "D3 Hospitality and Culinary Art",
+        program: "D3-Hospitality and Culinary Art",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -967,7 +967,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CS",
         code1: "C",
         code2: "S",
-        program: "D3 Hospitality and Culinary Art",
+        program: "D3-Hospitality and Culinary Art",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -977,7 +977,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SE",
         code1: "S",
         code2: "E",
-        program: "D3 Hospitality and Culinary Art",
+        program: "D3-Hospitality and Culinary Art",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -987,7 +987,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IS",
         code1: "I",
         code2: "S",
-        program: "S1 Psikologi",
+        program: "S1-Psikologi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -997,7 +997,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Psikologi",
+        program: "S1-Psikologi",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -1007,7 +1007,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Psikologi"
+        program: "S1-Psikologi"
     },
     {
         orientation: "IDE_MANUSIA",
@@ -1017,7 +1017,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SI",
         code1: "S",
         code2: "I",
-        program: "S1 Psikologi"
+        program: "S1-Psikologi"
     },
     {
         orientation: "IDE_MANUSIA",
@@ -1027,7 +1027,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SC",
         code1: "S",
         code2: "C",
-        program: "S1 Psikologi"
+        program: "S1-Psikologi"
     },
     {
         orientation: "IDE_MANUSIA",
@@ -1037,7 +1037,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SE",
         code1: "S",
         code2: "E",
-        program: "S1 Psikologi"
+        program: "S1-Psikologi"
     },
     {
         orientation: "IDE_MANUSIA",
@@ -1047,7 +1047,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AS",
         code1: "A",
         code2: "S",
-        program: "S1 Psikologi"
+        program: "S1-Psikologi"
     },
     {
         orientation: "IDE_MANUSIA",
@@ -1057,7 +1057,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SA",
         code1: "S",
         code2: "A",
-        program: "S1 Psikologi"
+        program: "S1-Psikologi"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1067,7 +1067,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Rekayasa Perangkat Lunak"
+        program: "S1-Rekayasa Perangkat Lunak"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1077,7 +1077,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AI",
         code1: "A",
         code2: "I",
-        program: "S1 Rekayasa Perangkat Lunak"
+        program: "S1-Rekayasa Perangkat Lunak"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1087,7 +1087,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IA",
         code1: "I",
         code2: "A",
-        program: "S1 Rekayasa Perangkat Lunak"
+        program: "S1-Rekayasa Perangkat Lunak"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1097,7 +1097,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Rekayasa Perangkat Lunak"
+        program: "S1-Rekayasa Perangkat Lunak"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1107,7 +1107,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IA",
         code1: "I",
         code2: "A",
-        program: "S1 Rekayasa Perangkat Lunak"
+        program: "S1-Rekayasa Perangkat Lunak"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1117,7 +1117,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Rekayasa Perangkat Lunak"
+        program: "S1-Rekayasa Perangkat Lunak"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1127,7 +1127,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Rekayasa Perangkat Lunak"
+        program: "S1-Rekayasa Perangkat Lunak"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1137,7 +1137,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Data Sains"
+        program: "S1-Data Sains"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1147,7 +1147,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Data Sains"
+        program: "S1-Data Sains"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1157,7 +1157,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Data Sains"
+        program: "S1-Data Sains"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1167,7 +1167,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Data Sains"
+        program: "S1-Data Sains"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1177,7 +1177,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Data Sains"
+        program: "S1-Data Sains"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1187,7 +1187,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Data Sains"
+        program: "S1-Data Sains"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1197,7 +1197,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Creative Arts (Intermedia Visual Arts)"
+        program: "S1-Creative Arts (Intermedia Visual Arts)"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1207,7 +1207,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Creative Arts (Intermedia Visual Arts)"
+        program: "S1-Creative Arts (Intermedia Visual Arts)"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1217,7 +1217,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Creative Arts (Intermedia Visual Arts)"
+        program: "S1-Creative Arts (Intermedia Visual Arts)"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1227,7 +1227,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Creative Arts (Intermedia Visual Arts)"
+        program: "S1-Creative Arts (Intermedia Visual Arts)"
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1237,7 +1237,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SA",
         code1: "S",
         code2: "A",
-        program: "S1 Creative Arts (Intermedia Visual Arts)"
+        program: "S1-Creative Arts (Intermedia Visual Arts)"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1247,7 +1247,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Sistem Informasi"
+        program: "S1-Sistem Informasi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1257,7 +1257,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Sistem Informasi"
+        program: "S1-Sistem Informasi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1267,7 +1267,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Sistem Informasi"
+        program: "S1-Sistem Informasi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1277,7 +1277,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Sistem Informasi"
+        program: "S1-Sistem Informasi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1287,7 +1287,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Sistem Informasi"
+        program: "S1-Sistem Informasi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1297,7 +1297,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Sistem Informasi"
+        program: "S1-Sistem Informasi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1307,7 +1307,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "D3 Sistem Informasi Akuntansi"
+        program: "D3-Sistem Informasi Akuntansi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1317,7 +1317,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "D3 Sistem Informasi Akuntansi"
+        program: "D3-Sistem Informasi Akuntansi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1327,7 +1327,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "D3 Sistem Informasi Akuntansi"
+        program: "D3-Sistem Informasi Akuntansi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1337,7 +1337,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "D3 Sistem Informasi Akuntansi"
+        program: "D3-Sistem Informasi Akuntansi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1347,7 +1347,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "D3 Sistem Informasi Akuntansi"
+        program: "D3-Sistem Informasi Akuntansi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1357,7 +1357,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "D3 Sistem Informasi Akuntansi"
+        program: "D3-Sistem Informasi Akuntansi"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1427,7 +1427,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Teknik Biomedis"
+        program: "S1-Teknik Biomedis"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1437,7 +1437,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Teknik Biomedis"
+        program: "S1-Teknik Biomedis"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1447,7 +1447,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SI",
         code1: "S",
         code2: "I",
-        program: "S1 Teknik Biomedis"
+        program: "S1-Teknik Biomedis"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1457,7 +1457,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Teknik Biomedis"
+        program: "S1-Teknik Biomedis"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1467,7 +1467,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Teknik Biomedis"
+        program: "S1-Teknik Biomedis"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1477,7 +1477,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Teknik Biomedis"
+        program: "S1-Teknik Biomedis"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1487,7 +1487,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Teknik Elektro"
+        program: "S1-Teknik Elektro"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1497,7 +1497,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Teknik Elektro"
+        program: "S1-Teknik Elektro"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1507,7 +1507,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Teknik Elektro"
+        program: "S1-Teknik Elektro"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1517,7 +1517,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Teknik Elektro"
+        program: "S1-Teknik Elektro"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1527,7 +1527,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Teknik Elektro"
+        program: "S1-Teknik Elektro"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1537,7 +1537,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Teknik Elektro"
+        program: "S1-Teknik Elektro"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1547,7 +1547,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Smart Science and Technology"
+        program: "S1-Smart Science and Technology"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1557,7 +1557,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Smart Science and Technology"
+        program: "S1-Smart Science and Technology"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1567,7 +1567,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Smart Science and Technology"
+        program: "S1-Smart Science and Technology"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1577,7 +1577,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Smart Science and Technology"
+        program: "S1-Smart Science and Technology"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1587,7 +1587,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Smart Science and Technology"
+        program: "S1-Smart Science and Technology"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1597,7 +1597,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Smart Science and Technology"
+        program: "S1-Smart Science and Technology"
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -1607,7 +1607,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Teknik Industri"
+        program: "S1-Teknik Industri"
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -1617,7 +1617,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Teknik Industri"
+        program: "S1-Teknik Industri"
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -1627,7 +1627,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Teknik Industri"
+        program: "S1-Teknik Industri"
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -1637,7 +1637,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Teknik Industri"
+        program: "S1-Teknik Industri"
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -1647,7 +1647,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IE",
         code1: "I",
         code2: "E",
-        program: "S1 Teknik Industri"
+        program: "S1-Teknik Industri"
     },
     {
         orientation: "MANUSIA_TEKNOLOGI",
@@ -1657,7 +1657,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EI",
         code1: "E",
         code2: "I",
-        program: "S1 Teknik Industri"
+        program: "S1-Teknik Industri"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1667,7 +1667,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Teknik Komputer"
+        program: "S1-Teknik Komputer"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1677,7 +1677,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Teknik Komputer"
+        program: "S1-Teknik Komputer"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1687,7 +1687,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Teknik Komputer"
+        program: "S1-Teknik Komputer"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1697,7 +1697,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Teknik Komputer"
+        program: "S1-Teknik Komputer"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1707,7 +1707,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Teknik Komputer"
+        program: "S1-Teknik Komputer"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1717,7 +1717,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Teknik Komputer"
+        program: "S1-Teknik Komputer"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1727,7 +1727,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CE",
         code1: "C",
         code2: "E",
-        program: "S1 Digital Supply Chain"
+        program: "S1-Digital Supply Chain"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1737,7 +1737,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EC",
         code1: "E",
         code2: "C",
-        program: "S1 Digital Supply Chain"
+        program: "S1-Digital Supply Chain"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1747,7 +1747,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Digital Supply Chain"
+        program: "S1-Digital Supply Chain"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1757,7 +1757,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Digital Supply Chain"
+        program: "S1-Digital Supply Chain"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1767,7 +1767,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Digital Supply Chain"
+        program: "S1-Digital Supply Chain"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1777,7 +1777,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Digital Supply Chain"
+        program: "S1-Digital Supply Chain"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1787,7 +1787,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Digital Supply Chain"
+        program: "S1-Digital Supply Chain"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1797,7 +1797,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Electrical Energy Engineering"
+        program: "S1-Electrical Energy Engineering"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1807,7 +1807,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Electrical Energy Engineering"
+        program: "S1-Electrical Energy Engineering"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1817,7 +1817,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Electrical Energy Engineering"
+        program: "S1-Electrical Energy Engineering"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1827,7 +1827,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Electrical Energy Engineering"
+        program: "S1-Electrical Energy Engineering"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1837,7 +1837,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Electrical Energy Engineering"
+        program: "S1-Electrical Energy Engineering"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1847,7 +1847,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Electrical Energy Engineering"
+        program: "S1-Electrical Energy Engineering"
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1857,7 +1857,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Teknik Telekomunikasi",
+        program: "S1-Teknik Telekomunikasi",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1867,7 +1867,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Teknik Telekomunikasi",
+        program: "S1-Teknik Telekomunikasi",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1877,7 +1877,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Teknik Telekomunikasi",
+        program: "S1-Teknik Telekomunikasi",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1887,7 +1887,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Teknik Telekomunikasi",
+        program: "S1-Teknik Telekomunikasi",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1897,7 +1897,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Teknik Telekomunikasi",
+        program: "S1-Teknik Telekomunikasi",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1907,7 +1907,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Teknik Telekomunikasi",
+        program: "S1-Teknik Telekomunikasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1917,7 +1917,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RI",
         code1: "R",
         code2: "I",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1927,7 +1927,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1937,7 +1937,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1947,7 +1947,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CR",
         code1: "C",
         code2: "R",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1957,7 +1957,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1967,7 +1967,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RC",
         code1: "R",
         code2: "C",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1977,7 +1977,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "IDE_TEKNOLOGI",
@@ -1987,7 +1987,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Teknologi Informasi",
+        program: "S1-Teknologi Informasi",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -1997,7 +1997,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Teknologi Pangan",
+        program: "S1-Teknologi Pangan",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2007,7 +2007,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "CI",
         code1: "C",
         code2: "I",
-        program: "S1 Teknologi Pangan",
+        program: "S1-Teknologi Pangan",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2017,7 +2017,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IS",
         code1: "I",
         code2: "S",
-        program: "S1 Teknologi Pangan",
+        program: "S1-Teknologi Pangan",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2027,7 +2027,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SI",
         code1: "S",
         code2: "I",
-        program: "S1 Teknologi Pangan",
+        program: "S1-Teknologi Pangan",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2037,7 +2037,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "ER",
         code1: "E",
         code2: "R",
-        program: "S1 Teknologi Pangan",
+        program: "S1-Teknologi Pangan",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2047,7 +2047,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RE",
         code1: "R",
         code2: "E",
-        program: "S1 Teknologi Pangan",
+        program: "S1-Teknologi Pangan",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2057,7 +2057,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AI",
         code1: "A",
         code2: "I",
-        program: "S1 Terapan Digital Creative Multimedia (DCM)",
+        program: "S1-Terapan Digital Creative Multimedia (DCM)",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2067,7 +2067,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Terapan Digital Creative Multimedia (DCM)",
+        program: "S1-Terapan Digital Creative Multimedia (DCM)",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2077,7 +2077,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AC",
         code1: "A",
         code2: "C",
-        program: "S1 Terapan Digital Creative Multimedia (DCM)",
+        program: "S1-Terapan Digital Creative Multimedia (DCM)",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2087,7 +2087,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IA",
         code1: "I",
         code2: "A",
-        program: "S1 Terapan Digital Creative Multimedia (DCM)",
+        program: "S1-Terapan Digital Creative Multimedia (DCM)",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2097,7 +2097,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IC",
         code1: "I",
         code2: "C",
-        program: "S1 Terapan Digital Creative Multimedia (DCM)",
+        program: "S1-Terapan Digital Creative Multimedia (DCM)",
     },
     {
         orientation: "DATA_TEKNOLOGI",
@@ -2107,7 +2107,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "IR",
         code1: "I",
         code2: "R",
-        program: "S1 Terapan Digital Creative Multimedia (DCM)",
+        program: "S1-Terapan Digital Creative Multimedia (DCM)",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -2117,7 +2117,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AR",
         code1: "A",
         code2: "R",
-        program: "S1 Desain Komunikasi Visual",
+        program: "S1-Desain Komunikasi Visual",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -2127,7 +2127,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AE",
         code1: "A",
         code2: "E",
-        program: "S1 Desain Komunikasi Visual",
+        program: "S1-Desain Komunikasi Visual",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -2137,7 +2137,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "EA",
         code1: "E",
         code2: "A",
-        program: "S1 Desain Komunikasi Visual",
+        program: "S1-Desain Komunikasi Visual",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -2147,7 +2147,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "RA",
         code1: "R",
         code2: "A",
-        program: "S1 Desain Komunikasi Visual",
+        program: "S1-Desain Komunikasi Visual",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -2157,7 +2157,7 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "AS",
         code1: "A",
         code2: "S",
-        program: "S1 Desain Komunikasi Visual",
+        program: "S1-Desain Komunikasi Visual",
     },
     {
         orientation: "IDE_MANUSIA",
@@ -2167,331 +2167,331 @@ export const formulaCarierData: IFormulaCarier[] = [
         codeSDS: "SA",
         code1: "S",
         code2: "A",
-        program: "S1 Desain Komunikasi Visual",
+        program: "S1-Desain Komunikasi Visual",
     }
 ]
 
 export const formulaProgramData: IFormulaProgram[] = [
-    { mbti: "INTP-R", program: "D3 Digital Marketing" },
-    { mbti: "INTP-R", program: "S1 Informatika" },
-    { mbti: "INTP-R", program: "S1 Teknik Komputer" },
-    { mbti: "INTP-R", program: "S1 Teknik Elektro" },
-    { mbti: "INTP-R", program: "S1 Teknik Industri" },
-    { mbti: "INTP-R", program: "S1 Rekayasa Perangkat Lunak" },
-    { mbti: "INTP-I", program: "S1 Data Sains" },
-    { mbti: "INTP-I", program: "S1 Sistem Informasi" },
-    { mbti: "INTP-I", program: "S1 Psikologi" },
-    { mbti: "INTP-I", program: "S1 Teknik Biomedis" },
-    { mbti: "INTP-I", program: "S1 Electrical Energy Engineering" },
-    { mbti: "INTP-I", program: "S1 Smart Science and Technology" },
-    { mbti: "INTP-I", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INTP-I", program: "S1 Digital Content Broadcasting" },
-    { mbti: "INTP-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "INTP-A", program: "S1 Desain Interior" },
-    { mbti: "INTP-A", program: "S1 Kriya (Fashion and Textile Design)" },
-    { mbti: "INTP-A", program: "S1 Film dan Animasi" },
-    { mbti: "INTP-A", program: "S1 Creative Arts" },
-    { mbti: "INTP-S", program: "S1 Psikologi" },
-    { mbti: "INTP-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INTP-S", program: "S1 Digital Public Relations" },
-    { mbti: "INTP-E", program: "S1 Administrasi Bisnis" },
-    { mbti: "INTP-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "INTP-E", program: "S1 Bisnis Digital" },
-    { mbti: "INTP-E", program: "S1 Digital Marketing" },
-    { mbti: "INTJ-R", program: "S1 Teknik Komputer" },
-    { mbti: "INTJ-R", program: "S1 Teknik Elektro" },
-    { mbti: "INTJ-R", program: "S1 Teknik Biomedis" },
-    { mbti: "INTJ-R", program: "D3 Sistem Informasi Akuntansi" },
-    { mbti: "INTJ-R", program: "S1 Digital Supply Chain" },
-    { mbti: "INTJ-I", program: "S1 Data Sains" },
-    { mbti: "INTJ-I", program: "S1 Sistem Informasi" },
-    { mbti: "INTJ-I", program: "S1 Psikologi" },
-    { mbti: "INTJ-I", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INTJ-I", program: "S1 Teknologi Pangan" },
-    { mbti: "INTJ-I", program: "S1 Teknik Industri" },
-    { mbti: "INTJ-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "INTJ-A", program: "S1 Film dan Animasi" },
-    { mbti: "INTJ-A", program: "S1 Desain Produk & Inovasi" },
-    { mbti: "INTJ-A", program: "S1 Desain Interior" },
-    { mbti: "INTJ-S", program: "S1 Psikologi" },
-    { mbti: "INTJ-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INTJ-S", program: "S1 Digital Public Relations" },
-    { mbti: "INTJ-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "INTJ-E", program: "S1 Administrasi Bisnis" },
-    { mbti: "INTJ-E", program: "S1 Bisnis Digital" },
-    { mbti: "INTJ-C", program: "S1 Akuntansi" },
-    { mbti: "INTJ-C", program: "D3 Sistem Informasi Akuntansi" },
-    { mbti: "INFJ-I", program: "S1 Psikologi" },
-    { mbti: "INFJ-I", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INFJ-I", program: "S1 Data Sains" },
-    { mbti: "INFJ-I", program: "S1 Teknologi Pangan" },
-    { mbti: "INFJ-I", program: "S1 Sistem Informasi" },
-    { mbti: "INFJ-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "INFJ-A", program: "S1 Film dan Animasi" },
-    { mbti: "INFJ-A", program: "S1 Desain Produk & Inovasi" },
-    { mbti: "INFJ-A", program: "S1 Kriya (Fashion and Textile Design)" },
-    { mbti: "INFJ-S", program: "S1 Psikologi" },
-    { mbti: "INFJ-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INFJ-S", program: "S1 Digital Public Relations" },
-    { mbti: "INFJ-S", program: "S1 Administrasi Bisnis" },
-    { mbti: "INFJ-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "INFJ-E", program: "S1 Bisnis Digital" },
-    { mbti: "INFJ-C", program: "S1 Akuntansi" },
-    { mbti: "INFJ-C", program: "D3 Sistem Informasi Akuntansi" },
-    { mbti: "INFJ-C", program: "D3 Digital Marketing" },
-    { mbti: "ENFP-R", program: "S1 Desain Produk & Inovasi" },
-    { mbti: "ENFP-R", program: "S1 Teknik Industri" },
-    { mbti: "ENFP-R", program: "S1 Teknik Komputer" },
-    { mbti: "ENFP-R", program: "S1 Teknik Telekomunikasi" },
-    { mbti: "ENFP-R", program: "S1 Teknik Elektro" },
-    { mbti: "ENFP-R", program: "S1 Teknik Biomedis" },
-    { mbti: "ENFP-I", program: "S1 Psikologi" },
-    { mbti: "ENFP-I", program: "S1 Data Sains" },
-    { mbti: "ENFP-I", program: "S1 Sistem Informasi" },
+    { mbti: "INTP-R", program: "D3-Digital Marketing" },
+    { mbti: "INTP-R", program: "S1-Informatika" },
+    { mbti: "INTP-R", program: "S1-Teknik Komputer" },
+    { mbti: "INTP-R", program: "S1-Teknik Elektro" },
+    { mbti: "INTP-R", program: "S1-Teknik Industri" },
+    { mbti: "INTP-R", program: "S1-Rekayasa Perangkat Lunak" },
+    { mbti: "INTP-I", program: "S1-Data Sains" },
+    { mbti: "INTP-I", program: "S1-Sistem Informasi" },
+    { mbti: "INTP-I", program: "S1-Psikologi" },
+    { mbti: "INTP-I", program: "S1-Teknik Biomedis" },
+    { mbti: "INTP-I", program: "S1-Electrical Energy Engineering" },
+    { mbti: "INTP-I", program: "S1-Smart Science and Technology" },
+    { mbti: "INTP-I", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INTP-I", program: "S1-Digital Content Broadcasting" },
+    { mbti: "INTP-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "INTP-A", program: "S1-Desain Interior" },
+    { mbti: "INTP-A", program: "S1-Kriya (Fashion and Textile Design)" },
+    { mbti: "INTP-A", program: "S1-Film dan Animasi" },
+    { mbti: "INTP-A", program: "S1-Creative Arts" },
+    { mbti: "INTP-S", program: "S1-Psikologi" },
+    { mbti: "INTP-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INTP-S", program: "S1-Digital Public Relations" },
+    { mbti: "INTP-E", program: "S1-Administrasi Bisnis" },
+    { mbti: "INTP-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "INTP-E", program: "S1-Bisnis Digital" },
+    { mbti: "INTP-E", program: "S1-Digital Marketing" },
+    { mbti: "INTJ-R", program: "S1-Teknik Komputer" },
+    { mbti: "INTJ-R", program: "S1-Teknik Elektro" },
+    { mbti: "INTJ-R", program: "S1-Teknik Biomedis" },
+    { mbti: "INTJ-R", program: "D3-Sistem Informasi Akuntansi" },
+    { mbti: "INTJ-R", program: "S1-Digital Supply Chain" },
+    { mbti: "INTJ-I", program: "S1-Data Sains" },
+    { mbti: "INTJ-I", program: "S1-Sistem Informasi" },
+    { mbti: "INTJ-I", program: "S1-Psikologi" },
+    { mbti: "INTJ-I", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INTJ-I", program: "S1-Teknologi Pangan" },
+    { mbti: "INTJ-I", program: "S1-Teknik Industri" },
+    { mbti: "INTJ-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "INTJ-A", program: "S1-Film dan Animasi" },
+    { mbti: "INTJ-A", program: "S1-Desain Produk & Inovasi" },
+    { mbti: "INTJ-A", program: "S1-Desain Interior" },
+    { mbti: "INTJ-S", program: "S1-Psikologi" },
+    { mbti: "INTJ-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INTJ-S", program: "S1-Digital Public Relations" },
+    { mbti: "INTJ-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "INTJ-E", program: "S1-Administrasi Bisnis" },
+    { mbti: "INTJ-E", program: "S1-Bisnis Digital" },
+    { mbti: "INTJ-C", program: "S1-Akuntansi" },
+    { mbti: "INTJ-C", program: "D3-Sistem Informasi Akuntansi" },
+    { mbti: "INFJ-I", program: "S1-Psikologi" },
+    { mbti: "INFJ-I", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INFJ-I", program: "S1-Data Sains" },
+    { mbti: "INFJ-I", program: "S1-Teknologi Pangan" },
+    { mbti: "INFJ-I", program: "S1-Sistem Informasi" },
+    { mbti: "INFJ-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "INFJ-A", program: "S1-Film dan Animasi" },
+    { mbti: "INFJ-A", program: "S1-Desain Produk & Inovasi" },
+    { mbti: "INFJ-A", program: "S1-Kriya (Fashion and Textile Design)" },
+    { mbti: "INFJ-S", program: "S1-Psikologi" },
+    { mbti: "INFJ-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INFJ-S", program: "S1-Digital Public Relations" },
+    { mbti: "INFJ-S", program: "S1-Administrasi Bisnis" },
+    { mbti: "INFJ-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "INFJ-E", program: "S1-Bisnis Digital" },
+    { mbti: "INFJ-C", program: "S1-Akuntansi" },
+    { mbti: "INFJ-C", program: "D3-Sistem Informasi Akuntansi" },
+    { mbti: "INFJ-C", program: "D3-Digital Marketing" },
+    { mbti: "ENFP-R", program: "S1-Desain Produk & Inovasi" },
+    { mbti: "ENFP-R", program: "S1-Teknik Industri" },
+    { mbti: "ENFP-R", program: "S1-Teknik Komputer" },
+    { mbti: "ENFP-R", program: "S1-Teknik Telekomunikasi" },
+    { mbti: "ENFP-R", program: "S1-Teknik Elektro" },
+    { mbti: "ENFP-R", program: "S1-Teknik Biomedis" },
+    { mbti: "ENFP-I", program: "S1-Psikologi" },
+    { mbti: "ENFP-I", program: "S1-Data Sains" },
+    { mbti: "ENFP-I", program: "S1-Sistem Informasi" },
     { mbti: "ENFP-I", program: "D4 Sistem Informasi Kota Cerdas" },
-    { mbti: "ENFP-I", program: "S1 Smart Science and Technology" },
-    { mbti: "ENFP-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "ENFP-A", program: "S1 Kriya (Fashion and Textile Design)" },
-    { mbti: "ENFP-A", program: "S1 Film dan Animasi" },
-    { mbti: "ENFP-A", program: "S1 Creative Arts (Intermedia Visual Arts)" },
-    { mbti: "ENFP-A", program: "S1 Desain Interior" },
-    { mbti: "ENFP-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ENFP-S", program: "S1 Digital Public Relations" },
-    { mbti: "ENFP-S", program: "S1 Administrasi Bisnis" },
-    { mbti: "ENFP-S", program: "S1 Psikologi" },
-    { mbti: "ENFP-S", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ENFP-E", program: "S1 Bisnis Digital" },
-    { mbti: "ENFP-E", program: "S1 Digital Marketing" },
-    { mbti: "ENFP-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "ENFP-E", program: "S1 Leisure Management" },
-    { mbti: "ENFP-E", program: "S1 Akuntansi" },
-    { mbti: "ENFP-C", program: "D3 Sistem Informasi Akuntansi" },
-    { mbti: "ENFP-C", program: "S1 Akuntansi" },
-    { mbti: "ENFP-C", program: "S1 Digital Supply Chain" },
-    { mbti: "INFP-R", program: "S1 Teknologi Pangan" },
-    { mbti: "INFP-R", program: "S1 Desain Produk & Inovasi" },
-    { mbti: "INFP-R", program: "S1 Leisure Management" },
-    { mbti: "INFP-I", program: "S1 Psikologi" },
-    { mbti: "INFP-I", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INFP-A", program: "S1 Desain Interior" },
-    { mbti: "INFP-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "INFP-A", program: "S1 Kriya (Fashion and Textile Design)" },
-    { mbti: "INFP-A", program: "S1 Terapan Digital Creative Multimedia (DCM)" },
-    { mbti: "INFP-A", program: "S1 Film dan Animasi" },
-    { mbti: "INFP-A", program: "S1 Creative Arts (Intermedia Visual Arts)" },
-    { mbti: "INFP-A", program: "S1 Desain Produk & Inovasi" },
-    { mbti: "INFP-S", program: "S1 Psikologi" },
-    { mbti: "INFP-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "INFP-S", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "INFP-E", program: "S1 Administrasi Bisnis" },
-    { mbti: "INFP-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "INFP-E", program: "S1 Bisnis Digital" },
-    { mbti: "INFP-E", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ISTJ-R", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ISTJ-R", program: "S1 Manajemen Rekayasa Industri" },
-    { mbti: "ISTJ-R", program: "S1 Teknik Industri" },
-    { mbti: "ISTJ-R", program: "S1 Teknik Elektro" },
-    { mbti: "ISTJ-I", program: "S1 Psikologi" },
-    { mbti: "ISTJ-I", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ISTJ-I", program: "S1 Data Sains" },
-    { mbti: "ISTJ-I", program: "S1 Sistem Informasi" },
-    { mbti: "ISTJ-I", program: "S1 Smart Science and Technology" },
-    { mbti: "ISTJ-I", program: "S1 Teknik Biomedis" },
-    { mbti: "ISTJ-I", program: "S1 Teknik Komputer" },
-    { mbti: "ISTJ-C", program: "S1 Akuntansi" },
-    { mbti: "ISTJ-C", program: "D3 Sistem Informasi Akuntansi" },
-    { mbti: "ISTJ-C", program: "S1 Administrasi Bisnis" },
-    { mbti: "ISTJ-C", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "ISTJ-C", program: "S1 Rekayasa Perangkat Lunak" },
-    { mbti: "ISTJ-C", program: "S1 Sistem Informasi" },
-    { mbti: "ISTJ-C", program: "S1 Teknologi Informasi" },
-    { mbti: "ISFP-R", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ISFP-R", program: "S1 Desain Interior" },
-    { mbti: "ISFP-R", program: "S1 Teknologi Pangan" },
-    { mbti: "ISFP-R", program: "S1 Manajemen Rekayasa Industri" },
-    { mbti: "ISFP-R", program: "S1 Teknik Industri" },
-    { mbti: "ISFP-I", program: "S1 Teknik Biomedis" },
-    { mbti: "ISFP-I", program: "S1 Psikologi" },
-    { mbti: "ISFP-A", program: "S1 Desain Interior" },
-    { mbti: "ISFP-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "ISFP-A", program: "S1 Kriya (Fashion and Textile Design)" },
-    { mbti: "ISFP-A", program: "S1 Terapan Digital Creative Multimedia (DCM)" },
-    { mbti: "ISFP-A", program: "S1 Film dan Animasi" },
-    { mbti: "ISFP-A", program: "S1 Creative Arts (Intermedia Visual Arts)" },
-    { mbti: "ISFP-S", program: "S1 Psikologi" },
-    { mbti: "ISFP-S", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ISFP-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ISFP-E", program: "S1 Administrasi Bisnis" },
-    { mbti: "ISFP-E", program: "S1 Digital Marketing" },
-    { mbti: "ISFP-E", program: "S1 Bisnis Digital" },
-    { mbti: "ISFP-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "ISFJ-R", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ISFJ-A", program: "S1 Desain Interior" },
-    { mbti: "ISFJ-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "ISFJ-A", program: "S1 Kriya (Fashion and Textile Design)" },
-    { mbti: "ISFJ-A", program: "S1 Terapan Digital Creative Multimedia (DCM)" },
-    { mbti: "ISFJ-A", program: "S1 Film dan Animasi" },
-    { mbti: "ISFJ-A", program: "S1 Creative Arts (Intermedia Visual Arts)" },
-    { mbti: "ISFJ-S", program: "S1 Psikologi" },
-    { mbti: "ISFJ-S", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ISFJ-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ISFJ-E", program: "S1 Administrasi Bisnis" },
-    { mbti: "ISFJ-E", program: "S1 Digital Marketing" },
-    { mbti: "ISFJ-E", program: "S1 Bisnis Digital" },
-    { mbti: "ISFJ-C", program: "S1 Akuntansi" },
-    { mbti: "ISFJ-C", program: "S1 Administrasi Bisnis" },
-    { mbti: "ISTP-R", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ISTP-R", program: "S1 Manajemen Rekayasa Industri" },
-    { mbti: "ISTP-R", program: "S1 Teknik Elektro" },
-    { mbti: "ISTP-R", program: "S1 Teknik Industri" },
-    { mbti: "ISTP-I", program: "S1 Teknik Biomedis" },
-    { mbti: "ISTP-I", program: "S1 Psikologi" },
-    { mbti: "ISTP-I", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ISTP-I", program: "S1 Teknik Komputer" },
-    { mbti: "ISTP-A", program: "S1 Desain Produk & Inovasi" },
-    { mbti: "ISTP-A", program: "S1 Terapan Digital Creative Multimedia (DCM)" },
-    { mbti: "ISTP-S", program: "S1 Psikologi" },
-    { mbti: "ISTP-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ISTP-E", program: "S1 Administrasi Bisnis" },
-    { mbti: "ISTP-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "ENTP-R", program: "D3 Digital Marketing" },
-    { mbti: "ENTP-R", program: "S1 Teknik Elektro" },
-    { mbti: "ENTP-R", program: "S1 Teknik Komputer" },
-    { mbti: "ENTP-R", program: "S1 Teknik Industri" },
-    { mbti: "ENTP-I", program: "S1 Data Sains" },
-    { mbti: "ENTP-I", program: "S1 Sistem Informasi" },
-    { mbti: "ENTP-I", program: "S1 Rekayasa Perangkat Lunak" },
-    { mbti: "ENTP-I", program: "S1 Psikologi" },
-    { mbti: "ENTP-I", program: "S1 Biomedis" },
-    { mbti: "ENTP-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "ENTP-A", program: "S1 Desain Interior" },
-    { mbti: "ENTP-A", program: "S1 Kriya" },
-    { mbti: "ENTP-A", program: "S1 Film dan Animasi" },
-    { mbti: "ENTP-A", program: "S1 Creative Arts" },
-    { mbti: "ENTP-S", program: "S1 Psikologi" },
-    { mbti: "ENTP-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ENTP-S", program: "S1 Digital Public Relations" },
-    { mbti: "ENTP-S", program: "D3 Hospitality and Culinary Art" },
-    { mbti: 'ENTP-E', program: 'S1 Administrasi Bisnis' },
-    { mbti: 'ENTP-E', program: 'S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
-    { mbti: 'ENTP-E', program: 'S1 Bisnis Digital' },
-    { mbti: 'ENTP-E', program: 'S1 Smart Science and Technology' },
-    { mbti: 'ENTP-E', program: 'S1 Digital Content Broadcasting' },
-    { mbti: 'ENTP-C', program: 'S1 Akuntansi' },
-    { mbti: 'ENTP-C', program: 'D3 Sistem Informasi Akuntansi' },
-    { mbti: 'ENFJ-R', program: 'S1 Teknik Elektro' },
-    { mbti: 'ENFJ-R', program: 'S1 Teknik Komputer' },
-    { mbti: 'ENFJ-R', program: 'S1 Teknik Industri' },
-    { mbti: 'ENFJ-I', program: 'S1 Data Sains' },
-    { mbti: 'ENFJ-I', program: 'S1 Sistem Informasi' },
-    { mbti: 'ENFJ-I', program: 'S1 Rekayasa Perangkat Lunak' },
-    { mbti: 'ENFJ-I', program: 'S1 Psikologi' },
-    { mbti: 'ENFJ-I', program: 'S1 Biomedis' },
-    { mbti: 'ENFJ-A', program: 'S1 Desain Komunikasi Visual' },
-    { mbti: 'ENFJ-A', program: 'S1 Desain Interior' },
-    { mbti: 'ENFJ-A', program: 'S1 Kriya' },
-    { mbti: 'ENFJ-A', program: 'S1 Film dan Animasi' },
-    { mbti: 'ENFJ-A', program: 'S1 Creative Arts' },
-    { mbti: 'ENFJ-S', program: 'S1 Psikologi' },
-    { mbti: 'ENFJ-S', program: 'S1 Ilmu Komunikasi' },
-    { mbti: 'ENFJ-S', program: 'S1 Digital Public Relations' },
-    { mbti: 'ENFJ-S', program: 'D3 Hospitality and Culinary Art' },
-    { mbti: 'ENFJ-S', program: 'S1 Leisure Management' },
-    { mbti: 'ENFJ-E', program: 'S1 Administrasi Bisnis' },
-    { mbti: 'ENFJ-E', program: 'S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
-    { mbti: 'ENFJ-E', program: 'S1 Bisnis Digital' },
-    { mbti: 'ENFJ-E', program: 'S1 Smart Science and Technology' },
-    { mbti: 'ENFJ-C', program: 'S1 Akuntansi' },
-    { mbti: 'ENFJ-C', program: 'D3 Sistem Informasi Akuntansi' },
-    { mbti: 'ENTJ-R', program: 'S1 Teknik Elektro' },
-    { mbti: 'ENTJ-R', program: 'S1 Teknik Industri' },
-    { mbti: 'ENTJ-R', program: 'S1 Teknik Komputer' },
-    { mbti: 'ENTJ-R', program: 'S1 Teknologi Pangan' },
-    { mbti: 'ENTJ-I', program: 'S1 Data Sains' },
-    { mbti: 'ENTJ-I', program: 'S1 Sistem Informasi' },
-    { mbti: 'ENTJ-I', program: 'S1 Rekayasa Perangkat Lunak' },
-    { mbti: 'ENTJ-I', program: 'S1 Psikologi' },
-    { mbti: 'ENTJ-A', program: 'S1 Desain Komunikasi Visual' },
-    { mbti: 'ENTJ-A', program: 'S1 Desain Produk & Inovasi' },
-    { mbti: 'ENTJ-A', program: 'S1 Film dan Animasi' },
-    { mbti: 'ENTJ-A', program: 'S1 Kriya' },
-    { mbti: 'ENTJ-S', program: 'S1 Psikologi' },
-    { mbti: 'ENTJ-S', program: 'S1 Ilmu Komunikasi' },
-    { mbti: 'ENTJ-S', program: 'S1 Digital Public Relations' },
-    { mbti: 'ENTJ-S', program: 'D3 Hospitality and Culinary Art' },
-    { mbti: 'ENTJ-E', program: 'S1 Administrasi Bisnis' },
-    { mbti: 'ENTJ-E', program: 'S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
-    { mbti: 'ENTJ-E', program: 'S1 Bisnis Digital' },
-    { mbti: 'ENTJ-E', program: 'S1 Smart Science and Technology' },
-    { mbti: 'ENTJ-E', program: 'S1 Digital Content Broadcasting' },
-    { mbti: 'ENTJ-C', program: 'S1 Akuntansi' },
-    { mbti: 'ENTJ-C', program: 'D3 Sistem Informasi Akuntansi' },
-    { mbti: 'ESFP-R', program: 'S1 Teknik Elektro' },
-    { mbti: 'ESFP-R', program: 'S1 Teknik Komputer' },
-    { mbti: 'ESFP-R', program: 'S1 Teknik Industri' },
-    { mbti: 'ESFP-I', program: 'S1 Data Sains' },
-    { mbti: 'ESFP-I', program: 'S1 Sistem Informasi' },
-    { mbti: 'ESFP-I', program: 'S1 Rekayasa Perangkat Lunak' },
-    { mbti: 'ESFP-I', program: 'S1 Psikologi' },
-    { mbti: 'ESFP-A', program: 'S1 Desain Komunikasi Visual' },
-    { mbti: 'ESFP-A', program: 'S1 Desain Interior' },
-    { mbti: 'ESFP-A', program: 'S1 Kriya' },
-    { mbti: 'ESFP-A', program: 'S1 Film dan Animasi' },
-    { mbti: 'ESFP-A', program: 'S1 Creative Arts' },
-    { mbti: 'ESFP-S', program: 'S1 Psikologi' },
-    { mbti: 'ESFP-S', program: 'S1 Ilmu Komunikasi' },
-    { mbti: 'ESFP-S', program: 'S1 Digital Public Relations' },
-    { mbti: 'ESFP-S', program: 'D3 Hospitality and Culinary Art' },
-    { mbti: 'ESFP-E', program: 'S1 Administrasi Bisnis' },
-    { mbti: 'ESFP-E', program: 'S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
-    { mbti: 'ESFP-E', program: 'S1 Bisnis Digital' },
-    { mbti: 'ESFP-E', program: 'S1 Digital Content Broadcasting' },
-    { mbti: 'ESFP-C', program: 'S1 Akuntansi' },
-    { mbti: 'ESFP-C', program: 'D3 Sistem Informasi Akuntansi' },
-    { mbti: 'ESFJ-R', program: 'S1 Teknik Elektro' },
-    { mbti: 'ESFJ-R', program: 'S1 Teknik Komputer' },
-    { mbti: 'ESFJ-R', program: 'S1 Teknik Industri' },
-    { mbti: 'ESFJ-R', program: 'S1 Teknologi Pangan' },
-    { mbti: 'ESFJ-I', program: 'S1 Data Sains' },
-    { mbti: 'ESFJ-I', program: 'S1 Sistem Informasi' },
-    { mbti: 'ESFJ-I', program: 'S1 Rekayasa Perangkat Lunak' },
-    { mbti: 'ESFJ-I', program: 'S1 Psikologi' },
-    { mbti: 'ESFJ-A', program: 'S1 Desain Komunikasi Visual' },
-    { mbti: 'ESFJ-A', program: 'S1 Desain Interior' },
-    { mbti: 'ESFJ-A', program: 'S1 Kriya' },
-    { mbti: 'ESFJ-A', program: 'S1 Film dan Animasi' },
-    { mbti: 'ESFJ-A', program: 'S1 Creative Arts' },
-    { mbti: 'ESFJ-S', program: 'S1 Psikologi' },
-    { mbti: 'ESFJ-S', program: 'S1 Ilmu Komunikasi' },
-    { mbti: 'ESFJ-S', program: 'S1 Digital Public Relations' },
-    { mbti: 'ESFJ-S', program: 'D3 Hospitality and Culinary Art' },
-    { mbti: 'ESFJ-E', program: 'S1 Administrasi Bisnis' },
-    { mbti: 'ESFJ-E', program: 'S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
-    { mbti: 'ESFJ-E', program: 'S1 Bisnis Digital' },
-    { mbti: 'ESFJ-E', program: 'S1 Smart Science and Technology' },
-    { mbti: 'ESFJ-C', program: 'S1 Akuntansi' },
-    { mbti: 'ESFJ-C', program: 'D3 Sistem Informasi Akuntansi' },
-    { mbti: 'ESTP-R', program: 'S1 Teknik Elektro' },
-    { mbti: "ESTP-R", program: "S1 Teknik Komputer" },
-    { mbti: "ESTP-R", program: "S1 Teknik Industri" },
-    { mbti: "ESTP-R", program: "S1 Teknologi Pangan" },
-    { mbti: "ESTP-I", program: "S1 Data Sains" },
-    { mbti: "ESTP-I", program: "S1 Sistem Informasi" },
-    { mbti: "ESTP-I", program: "S1 Rekayasa Perangkat Lunak" },
-    { mbti: "ESTP-I", program: "S1 Psikologi" },
-    { mbti: "ESTP-A", program: "S1 Desain Komunikasi Visual" },
-    { mbti: "ESTP-A", program: "S1 Kriya" },
-    { mbti: "ESTP-A", program: "S1 Desain Interior" },
-    { mbti: "ESTP-A", program: "S1 Film dan Animasi" },
-    { mbti: "ESTP-A", program: "S1 Creative Arts" },
-    { mbti: "ESTP-S", program: "S1 Psikologi" },
-    { mbti: "ESTP-S", program: "S1 Ilmu Komunikasi" },
-    { mbti: "ESTP-S", program: "S1 Digital Public Relations" },
-    { mbti: "ESTP-S", program: "D3 Hospitality and Culinary Art" },
-    { mbti: "ESTP-E", program: "S1 Administrasi Bisnis" },
-    { mbti: "ESTP-E", program: "S1 Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
-    { mbti: "ESTP-E", program: "S1 Bisnis Digital" },
-    { mbti: "ESTP-E", program: "S1 Smart Science and Technology" },
-    { mbti: "ESTP-C", program: "S1 Akuntansi" },
-    { mbti: "ESTP-C", program: "D3 Sistem Informasi Akuntansi" }
+    { mbti: "ENFP-I", program: "S1-Smart Science and Technology" },
+    { mbti: "ENFP-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "ENFP-A", program: "S1-Kriya (Fashion and Textile Design)" },
+    { mbti: "ENFP-A", program: "S1-Film dan Animasi" },
+    { mbti: "ENFP-A", program: "S1-Creative Arts (Intermedia Visual Arts)" },
+    { mbti: "ENFP-A", program: "S1-Desain Interior" },
+    { mbti: "ENFP-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ENFP-S", program: "S1-Digital Public Relations" },
+    { mbti: "ENFP-S", program: "S1-Administrasi Bisnis" },
+    { mbti: "ENFP-S", program: "S1-Psikologi" },
+    { mbti: "ENFP-S", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ENFP-E", program: "S1-Bisnis Digital" },
+    { mbti: "ENFP-E", program: "S1-Digital Marketing" },
+    { mbti: "ENFP-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "ENFP-E", program: "S1-Leisure Management" },
+    { mbti: "ENFP-E", program: "S1-Akuntansi" },
+    { mbti: "ENFP-C", program: "D3-Sistem Informasi Akuntansi" },
+    { mbti: "ENFP-C", program: "S1-Akuntansi" },
+    { mbti: "ENFP-C", program: "S1-Digital Supply Chain" },
+    { mbti: "INFP-R", program: "S1-Teknologi Pangan" },
+    { mbti: "INFP-R", program: "S1-Desain Produk & Inovasi" },
+    { mbti: "INFP-R", program: "S1-Leisure Management" },
+    { mbti: "INFP-I", program: "S1-Psikologi" },
+    { mbti: "INFP-I", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INFP-A", program: "S1-Desain Interior" },
+    { mbti: "INFP-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "INFP-A", program: "S1-Kriya (Fashion and Textile Design)" },
+    { mbti: "INFP-A", program: "S1-Terapan Digital Creative Multimedia (DCM)" },
+    { mbti: "INFP-A", program: "S1-Film dan Animasi" },
+    { mbti: "INFP-A", program: "S1-Creative Arts (Intermedia Visual Arts)" },
+    { mbti: "INFP-A", program: "S1-Desain Produk & Inovasi" },
+    { mbti: "INFP-S", program: "S1-Psikologi" },
+    { mbti: "INFP-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "INFP-S", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "INFP-E", program: "S1-Administrasi Bisnis" },
+    { mbti: "INFP-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "INFP-E", program: "S1-Bisnis Digital" },
+    { mbti: "INFP-E", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ISTJ-R", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ISTJ-R", program: "S1-Manajemen Rekayasa Industri" },
+    { mbti: "ISTJ-R", program: "S1-Teknik Industri" },
+    { mbti: "ISTJ-R", program: "S1-Teknik Elektro" },
+    { mbti: "ISTJ-I", program: "S1-Psikologi" },
+    { mbti: "ISTJ-I", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ISTJ-I", program: "S1-Data Sains" },
+    { mbti: "ISTJ-I", program: "S1-Sistem Informasi" },
+    { mbti: "ISTJ-I", program: "S1-Smart Science and Technology" },
+    { mbti: "ISTJ-I", program: "S1-Teknik Biomedis" },
+    { mbti: "ISTJ-I", program: "S1-Teknik Komputer" },
+    { mbti: "ISTJ-C", program: "S1-Akuntansi" },
+    { mbti: "ISTJ-C", program: "D3-Sistem Informasi Akuntansi" },
+    { mbti: "ISTJ-C", program: "S1-Administrasi Bisnis" },
+    { mbti: "ISTJ-C", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "ISTJ-C", program: "S1-Rekayasa Perangkat Lunak" },
+    { mbti: "ISTJ-C", program: "S1-Sistem Informasi" },
+    { mbti: "ISTJ-C", program: "S1-Teknologi Informasi" },
+    { mbti: "ISFP-R", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ISFP-R", program: "S1-Desain Interior" },
+    { mbti: "ISFP-R", program: "S1-Teknologi Pangan" },
+    { mbti: "ISFP-R", program: "S1-Manajemen Rekayasa Industri" },
+    { mbti: "ISFP-R", program: "S1-Teknik Industri" },
+    { mbti: "ISFP-I", program: "S1-Teknik Biomedis" },
+    { mbti: "ISFP-I", program: "S1-Psikologi" },
+    { mbti: "ISFP-A", program: "S1-Desain Interior" },
+    { mbti: "ISFP-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "ISFP-A", program: "S1-Kriya (Fashion and Textile Design)" },
+    { mbti: "ISFP-A", program: "S1-Terapan Digital Creative Multimedia (DCM)" },
+    { mbti: "ISFP-A", program: "S1-Film dan Animasi" },
+    { mbti: "ISFP-A", program: "S1-Creative Arts (Intermedia Visual Arts)" },
+    { mbti: "ISFP-S", program: "S1-Psikologi" },
+    { mbti: "ISFP-S", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ISFP-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ISFP-E", program: "S1-Administrasi Bisnis" },
+    { mbti: "ISFP-E", program: "S1-Digital Marketing" },
+    { mbti: "ISFP-E", program: "S1-Bisnis Digital" },
+    { mbti: "ISFP-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "ISFJ-R", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ISFJ-A", program: "S1-Desain Interior" },
+    { mbti: "ISFJ-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "ISFJ-A", program: "S1-Kriya (Fashion and Textile Design)" },
+    { mbti: "ISFJ-A", program: "S1-Terapan Digital Creative Multimedia (DCM)" },
+    { mbti: "ISFJ-A", program: "S1-Film dan Animasi" },
+    { mbti: "ISFJ-A", program: "S1-Creative Arts (Intermedia Visual Arts)" },
+    { mbti: "ISFJ-S", program: "S1-Psikologi" },
+    { mbti: "ISFJ-S", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ISFJ-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ISFJ-E", program: "S1-Administrasi Bisnis" },
+    { mbti: "ISFJ-E", program: "S1-Digital Marketing" },
+    { mbti: "ISFJ-E", program: "S1-Bisnis Digital" },
+    { mbti: "ISFJ-C", program: "S1-Akuntansi" },
+    { mbti: "ISFJ-C", program: "S1-Administrasi Bisnis" },
+    { mbti: "ISTP-R", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ISTP-R", program: "S1-Manajemen Rekayasa Industri" },
+    { mbti: "ISTP-R", program: "S1-Teknik Elektro" },
+    { mbti: "ISTP-R", program: "S1-Teknik Industri" },
+    { mbti: "ISTP-I", program: "S1-Teknik Biomedis" },
+    { mbti: "ISTP-I", program: "S1-Psikologi" },
+    { mbti: "ISTP-I", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ISTP-I", program: "S1-Teknik Komputer" },
+    { mbti: "ISTP-A", program: "S1-Desain Produk & Inovasi" },
+    { mbti: "ISTP-A", program: "S1-Terapan Digital Creative Multimedia (DCM)" },
+    { mbti: "ISTP-S", program: "S1-Psikologi" },
+    { mbti: "ISTP-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ISTP-E", program: "S1-Administrasi Bisnis" },
+    { mbti: "ISTP-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "ENTP-R", program: "D3-Digital Marketing" },
+    { mbti: "ENTP-R", program: "S1-Teknik Elektro" },
+    { mbti: "ENTP-R", program: "S1-Teknik Komputer" },
+    { mbti: "ENTP-R", program: "S1-Teknik Industri" },
+    { mbti: "ENTP-I", program: "S1-Data Sains" },
+    { mbti: "ENTP-I", program: "S1-Sistem Informasi" },
+    { mbti: "ENTP-I", program: "S1-Rekayasa Perangkat Lunak" },
+    { mbti: "ENTP-I", program: "S1-Psikologi" },
+    { mbti: "ENTP-I", program: "S1-Biomedis" },
+    { mbti: "ENTP-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "ENTP-A", program: "S1-Desain Interior" },
+    { mbti: "ENTP-A", program: "S1-Kriya" },
+    { mbti: "ENTP-A", program: "S1-Film dan Animasi" },
+    { mbti: "ENTP-A", program: "S1-Creative Arts" },
+    { mbti: "ENTP-S", program: "S1-Psikologi" },
+    { mbti: "ENTP-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ENTP-S", program: "S1-Digital Public Relations" },
+    { mbti: "ENTP-S", program: "D3-Hospitality and Culinary Art" },
+    { mbti: 'ENTP-E', program: 'S1-Administrasi Bisnis' },
+    { mbti: 'ENTP-E', program: 'S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
+    { mbti: 'ENTP-E', program: 'S1-Bisnis Digital' },
+    { mbti: 'ENTP-E', program: 'S1-Smart Science and Technology' },
+    { mbti: 'ENTP-E', program: 'S1-Digital Content Broadcasting' },
+    { mbti: 'ENTP-C', program: 'S1-Akuntansi' },
+    { mbti: 'ENTP-C', program: 'D3-Sistem Informasi Akuntansi' },
+    { mbti: 'ENFJ-R', program: 'S1-Teknik Elektro' },
+    { mbti: 'ENFJ-R', program: 'S1-Teknik Komputer' },
+    { mbti: 'ENFJ-R', program: 'S1-Teknik Industri' },
+    { mbti: 'ENFJ-I', program: 'S1-Data Sains' },
+    { mbti: 'ENFJ-I', program: 'S1-Sistem Informasi' },
+    { mbti: 'ENFJ-I', program: 'S1-Rekayasa Perangkat Lunak' },
+    { mbti: 'ENFJ-I', program: 'S1-Psikologi' },
+    { mbti: 'ENFJ-I', program: 'S1-Biomedis' },
+    { mbti: 'ENFJ-A', program: 'S1-Desain Komunikasi Visual' },
+    { mbti: 'ENFJ-A', program: 'S1-Desain Interior' },
+    { mbti: 'ENFJ-A', program: 'S1-Kriya' },
+    { mbti: 'ENFJ-A', program: 'S1-Film dan Animasi' },
+    { mbti: 'ENFJ-A', program: 'S1-Creative Arts' },
+    { mbti: 'ENFJ-S', program: 'S1-Psikologi' },
+    { mbti: 'ENFJ-S', program: 'S1-Ilmu Komunikasi' },
+    { mbti: 'ENFJ-S', program: 'S1-Digital Public Relations' },
+    { mbti: 'ENFJ-S', program: 'D3-Hospitality and Culinary Art' },
+    { mbti: 'ENFJ-S', program: 'S1-Leisure Management' },
+    { mbti: 'ENFJ-E', program: 'S1-Administrasi Bisnis' },
+    { mbti: 'ENFJ-E', program: 'S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
+    { mbti: 'ENFJ-E', program: 'S1-Bisnis Digital' },
+    { mbti: 'ENFJ-E', program: 'S1-Smart Science and Technology' },
+    { mbti: 'ENFJ-C', program: 'S1-Akuntansi' },
+    { mbti: 'ENFJ-C', program: 'D3-Sistem Informasi Akuntansi' },
+    { mbti: 'ENTJ-R', program: 'S1-Teknik Elektro' },
+    { mbti: 'ENTJ-R', program: 'S1-Teknik Industri' },
+    { mbti: 'ENTJ-R', program: 'S1-Teknik Komputer' },
+    { mbti: 'ENTJ-R', program: 'S1-Teknologi Pangan' },
+    { mbti: 'ENTJ-I', program: 'S1-Data Sains' },
+    { mbti: 'ENTJ-I', program: 'S1-Sistem Informasi' },
+    { mbti: 'ENTJ-I', program: 'S1-Rekayasa Perangkat Lunak' },
+    { mbti: 'ENTJ-I', program: 'S1-Psikologi' },
+    { mbti: 'ENTJ-A', program: 'S1-Desain Komunikasi Visual' },
+    { mbti: 'ENTJ-A', program: 'S1-Desain Produk & Inovasi' },
+    { mbti: 'ENTJ-A', program: 'S1-Film dan Animasi' },
+    { mbti: 'ENTJ-A', program: 'S1-Kriya' },
+    { mbti: 'ENTJ-S', program: 'S1-Psikologi' },
+    { mbti: 'ENTJ-S', program: 'S1-Ilmu Komunikasi' },
+    { mbti: 'ENTJ-S', program: 'S1-Digital Public Relations' },
+    { mbti: 'ENTJ-S', program: 'D3-Hospitality and Culinary Art' },
+    { mbti: 'ENTJ-E', program: 'S1-Administrasi Bisnis' },
+    { mbti: 'ENTJ-E', program: 'S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
+    { mbti: 'ENTJ-E', program: 'S1-Bisnis Digital' },
+    { mbti: 'ENTJ-E', program: 'S1-Smart Science and Technology' },
+    { mbti: 'ENTJ-E', program: 'S1-Digital Content Broadcasting' },
+    { mbti: 'ENTJ-C', program: 'S1-Akuntansi' },
+    { mbti: 'ENTJ-C', program: 'D3-Sistem Informasi Akuntansi' },
+    { mbti: 'ESFP-R', program: 'S1-Teknik Elektro' },
+    { mbti: 'ESFP-R', program: 'S1-Teknik Komputer' },
+    { mbti: 'ESFP-R', program: 'S1-Teknik Industri' },
+    { mbti: 'ESFP-I', program: 'S1-Data Sains' },
+    { mbti: 'ESFP-I', program: 'S1-Sistem Informasi' },
+    { mbti: 'ESFP-I', program: 'S1-Rekayasa Perangkat Lunak' },
+    { mbti: 'ESFP-I', program: 'S1-Psikologi' },
+    { mbti: 'ESFP-A', program: 'S1-Desain Komunikasi Visual' },
+    { mbti: 'ESFP-A', program: 'S1-Desain Interior' },
+    { mbti: 'ESFP-A', program: 'S1-Kriya' },
+    { mbti: 'ESFP-A', program: 'S1-Film dan Animasi' },
+    { mbti: 'ESFP-A', program: 'S1-Creative Arts' },
+    { mbti: 'ESFP-S', program: 'S1-Psikologi' },
+    { mbti: 'ESFP-S', program: 'S1-Ilmu Komunikasi' },
+    { mbti: 'ESFP-S', program: 'S1-Digital Public Relations' },
+    { mbti: 'ESFP-S', program: 'D3-Hospitality and Culinary Art' },
+    { mbti: 'ESFP-E', program: 'S1-Administrasi Bisnis' },
+    { mbti: 'ESFP-E', program: 'S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
+    { mbti: 'ESFP-E', program: 'S1-Bisnis Digital' },
+    { mbti: 'ESFP-E', program: 'S1-Digital Content Broadcasting' },
+    { mbti: 'ESFP-C', program: 'S1-Akuntansi' },
+    { mbti: 'ESFP-C', program: 'D3-Sistem Informasi Akuntansi' },
+    { mbti: 'ESFJ-R', program: 'S1-Teknik Elektro' },
+    { mbti: 'ESFJ-R', program: 'S1-Teknik Komputer' },
+    { mbti: 'ESFJ-R', program: 'S1-Teknik Industri' },
+    { mbti: 'ESFJ-R', program: 'S1-Teknologi Pangan' },
+    { mbti: 'ESFJ-I', program: 'S1-Data Sains' },
+    { mbti: 'ESFJ-I', program: 'S1-Sistem Informasi' },
+    { mbti: 'ESFJ-I', program: 'S1-Rekayasa Perangkat Lunak' },
+    { mbti: 'ESFJ-I', program: 'S1-Psikologi' },
+    { mbti: 'ESFJ-A', program: 'S1-Desain Komunikasi Visual' },
+    { mbti: 'ESFJ-A', program: 'S1-Desain Interior' },
+    { mbti: 'ESFJ-A', program: 'S1-Kriya' },
+    { mbti: 'ESFJ-A', program: 'S1-Film dan Animasi' },
+    { mbti: 'ESFJ-A', program: 'S1-Creative Arts' },
+    { mbti: 'ESFJ-S', program: 'S1-Psikologi' },
+    { mbti: 'ESFJ-S', program: 'S1-Ilmu Komunikasi' },
+    { mbti: 'ESFJ-S', program: 'S1-Digital Public Relations' },
+    { mbti: 'ESFJ-S', program: 'D3-Hospitality and Culinary Art' },
+    { mbti: 'ESFJ-E', program: 'S1-Administrasi Bisnis' },
+    { mbti: 'ESFJ-E', program: 'S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)' },
+    { mbti: 'ESFJ-E', program: 'S1-Bisnis Digital' },
+    { mbti: 'ESFJ-E', program: 'S1-Smart Science and Technology' },
+    { mbti: 'ESFJ-C', program: 'S1-Akuntansi' },
+    { mbti: 'ESFJ-C', program: 'D3-Sistem Informasi Akuntansi' },
+    { mbti: 'ESTP-R', program: 'S1-Teknik Elektro' },
+    { mbti: "ESTP-R", program: "S1-Teknik Komputer" },
+    { mbti: "ESTP-R", program: "S1-Teknik Industri" },
+    { mbti: "ESTP-R", program: "S1-Teknologi Pangan" },
+    { mbti: "ESTP-I", program: "S1-Data Sains" },
+    { mbti: "ESTP-I", program: "S1-Sistem Informasi" },
+    { mbti: "ESTP-I", program: "S1-Rekayasa Perangkat Lunak" },
+    { mbti: "ESTP-I", program: "S1-Psikologi" },
+    { mbti: "ESTP-A", program: "S1-Desain Komunikasi Visual" },
+    { mbti: "ESTP-A", program: "S1-Kriya" },
+    { mbti: "ESTP-A", program: "S1-Desain Interior" },
+    { mbti: "ESTP-A", program: "S1-Film dan Animasi" },
+    { mbti: "ESTP-A", program: "S1-Creative Arts" },
+    { mbti: "ESTP-S", program: "S1-Psikologi" },
+    { mbti: "ESTP-S", program: "S1-Ilmu Komunikasi" },
+    { mbti: "ESTP-S", program: "S1-Digital Public Relations" },
+    { mbti: "ESTP-S", program: "D3-Hospitality and Culinary Art" },
+    { mbti: "ESTP-E", program: "S1-Administrasi Bisnis" },
+    { mbti: "ESTP-E", program: "S1-Manajemen Bisnis Telekomunikasi & Informatika (MBTI)" },
+    { mbti: "ESTP-E", program: "S1-Bisnis Digital" },
+    { mbti: "ESTP-E", program: "S1-Smart Science and Technology" },
+    { mbti: "ESTP-C", program: "S1-Akuntansi" },
+    { mbti: "ESTP-C", program: "D3-Sistem Informasi Akuntansi" }
 ]

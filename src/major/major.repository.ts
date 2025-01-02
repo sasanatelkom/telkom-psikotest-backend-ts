@@ -30,4 +30,8 @@ export class MajorRepository {
         await this.getThrowMajorById(id);
         return await this.majorQuery.delete(id);
     }
+
+    async findByNames(names: string[]) {
+        return await this.majorQuery.findByNames(names);
+    }
 }
