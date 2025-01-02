@@ -141,6 +141,8 @@ export class ParticipantRepository {
 
         // Step 7: Send Email Result
         this.mailService.sendResultTest({ email, name, naration: mbtiNaration, suggestMajor: top5Majors });
+
+        return participant
     }
 
 

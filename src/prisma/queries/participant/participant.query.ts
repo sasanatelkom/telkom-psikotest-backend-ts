@@ -14,6 +14,25 @@ export class ParticipantQuery extends DbService {
                         index: true,
                         fieldWork: true
                     }
+                },
+                participantOnProfessionQuestion: {
+                    select: {
+                        nameProfession: true,
+                        codeProfession: true,
+                        timeTrack: true,
+                    }
+                },
+                participantOnPersonalityQuestion: {
+                    select: {
+                        code: true,
+                        opsi: true,
+                        personality: {
+                            select: {
+                                question: true,
+                                index: true
+                            }
+                        }
+                    }
                 }
             }
         });
