@@ -32,11 +32,14 @@ export class ParticipantRepository {
     }
 
     async getManyPaginate(dto: SearchPaginationDto) {
-        const { sort, page, limit } = dto;
+        const { sort, page, limit, search } = dto;
         const { include } = getIncludePropFindManyPaginate();
 
         return await this.participantQuery.findManyPaginate({
             include,
+            where: {
+                name: { contains: search }
+            },
             orderBy: { createdAt: sort },
             page,
             perPage: limit,
