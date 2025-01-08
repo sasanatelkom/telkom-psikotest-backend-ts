@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { ParticipantRepository } from './participant.repository';
 import { CreateParticipantDto } from './dto/participant.dto';
 import { Participant } from '@prisma/client';
+import { SearchPaginationDto } from '../utils/dto/pagination';
 
 @Injectable()
 export class ParticipantService {
@@ -19,6 +20,10 @@ export class ParticipantService {
 
     async createParticipant(dto: CreateParticipantDto) {
         return await this.participantRepository.createParticipant(dto);
+    }
+
+    async getManyPaginate(dto: SearchPaginationDto) {
+        return await this.participantRepository.getManyPaginate(dto)
     }
 
     // Delete participant by ID

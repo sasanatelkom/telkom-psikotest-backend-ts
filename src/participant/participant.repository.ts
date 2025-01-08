@@ -8,6 +8,8 @@ import { MbtiRepository } from '../mbti/mbti.repository';
 import { formulaCarierData, formulaOrientationData, formulaProgramData } from '../../prisma/datas/formula-carier.data';
 import { MajorRepository } from '../major/major.repository';
 import { MailService } from '../mail/mail.service';
+import { SearchPaginationDto } from '../utils/dto/pagination';
+import { getIncludePropFindManyPaginate } from '../prisma/queries/participant/props/include';
 
 @Injectable()
 export class ParticipantRepository {
@@ -27,6 +29,18 @@ export class ParticipantRepository {
 
     async getAllParticipants(): Promise<Participant[]> {
         return await this.participantQuery.findAll();
+    }
+
+    async getManyPaginate(dto: SearchPaginationDto) {
+        const { sort, page, limit } = dto;
+        const { include } = getIncludePropFindManyPaginate();
+
+        return await this.participantQuery.findManyPaginate({
+            include,
+            orderBy: { createdAt: sort },
+            page,
+            perPage: limit,
+        });
     }
 
     async createParticipant(dto: CreateParticipantDto) {

@@ -9,6 +9,7 @@ import {
     Delete,
     Res,
     UseGuards,
+    Query,
 } from '@nestjs/common';
 import { ParticipantService } from './participant.service';
 import { HttpHelper } from '../helpers/http.helper';
@@ -18,6 +19,7 @@ import { JwtGuard, RoleGuard } from '../auth/guard';
 import { TypeRoleUser } from '@prisma/client';
 import { Roles } from '../auth/decorator';
 import { CreateParticipantDto } from './dto/participant.dto';
+import { SearchPaginationDto } from '../utils/dto/pagination';
 
 @Controller('participant')
 export class ParticipantController {
@@ -29,10 +31,11 @@ export class ParticipantController {
 
     @Get()
     async getAllParticipants(
+        @Query() dto: SearchPaginationDto,
         @Res() res: Response,
     ) {
         try {
-            const result = await this.participantService.getAllParticipants();
+            const result = await this.participantService.getManyPaginate(dto);
             return this.httpHelper.formatResponse(res, HttpStatus.OK, result);
         } catch (error) {
             this.validation.errorHandler(res, error);

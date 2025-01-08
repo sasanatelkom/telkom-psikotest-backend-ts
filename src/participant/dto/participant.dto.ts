@@ -6,7 +6,7 @@ import {
     IsNotEmpty,
     ValidateNested,
     IsInt,
-    Min
+    Min,
 } from 'class-validator';
 import { TypeOrientation } from '@prisma/client';
 import { Type } from 'class-transformer';
