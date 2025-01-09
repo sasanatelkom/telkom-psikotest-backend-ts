@@ -75,11 +75,11 @@
         font-size: 14px;
       }
       .recommendation-table-body tr:nth-child(odd) {
-        background-color: #ffffff;
+        background-color: #ffffff !important;
       }
 
       .recommendation-table-body tr:nth-child(even) {
-        background-color: #f0f0f0;
+        background-color: #f0f0f0 !important;
       }
       .header {
         text-align: center;
@@ -104,30 +104,64 @@
       }
       .naration-container {
         padding: 16px;
-        background-color: #ff751c;
+        background-color: #ffe3e6;
         border-radius: 16px;
       }
       .naration-container p {
-        color: white;
+        color: #282828;
         margin: 0;
         padding: 0;
         margin-top: 16px;
+        text-align: justify;
       }
       .naration-container h1 {
-        color: white;
+        color: #282828;
         margin: 0;
         padding: 0;
         text-align: center;
-        font-size: 20px;
+        font-size: 24px;
       }
       .content {
         padding: 16px;
       }
       .content h2 {
-        font-size: 20px;
-        margin: 0 0 20px;
+        font-size: 24px;
+        margin: 0 0 0;
+        padding-bottom: 0 !important;
         text-align: center;
         color: #282828;
+      }
+      .content p {
+        padding: 0;
+        margin: 0;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+      }
+      .alert {
+        background-color: #ffe3e6;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        display: flex;
+        gap: 8px;
+        color: #e74646;
+        font-weight: 500;
+        font-size: 14px;
+        align-items: center;
+        padding: 8px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 12px;
+      }
+      .naration-image {
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 8px;
+      }
+      .naration-image img {
+        width: 100%;
+        max-width: 8rem;
       }
     </style>
   </head>
@@ -148,11 +182,25 @@
       </div>
       <div class="result-container">
         <div class="naration-container">
-          <h1>Hasil Tes Minat Bakat</h1>
-          <p>{{naration}}</p>
+          <div class="naration-image">
+            <img
+              alt="selfie"
+              src="https://telkom-psikotes.vercel.app/img/illust/selfie.webp"
+            />
+          </div>
+          <div>
+            <h1>Hasil Tes Minat Bakat</h1>
+            <p>{{naration}}</p>
+          </div>
         </div>
         <div class="content">
           <h2>Rekomendasi Jurusan</h2>
+          <p>
+            Kami sudah mengidentifikasi kekuatan kamu dan beberapa pilihan
+            jurusan berikut ini adalah yang sesuai dengan minat dan kepribadian
+            kamu Mari wujudkan masa depan dan kariermu bersama Telkom
+            University! Sampai jumpa di kampus!
+          </p>
           <table class="recommendation-table">
             <thead class="recommendation-table-header">
               <tr>
@@ -173,6 +221,27 @@
               {{/each}}
             </tbody>
           </table>
+          <div class="alert">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E74646"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-alert"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" x2="12" y1="8" y2="12" />
+              <line x1="12" x2="12.01" y1="16" y2="16" />
+            </svg>
+            <span>
+              Hasil tes minat bakatmu sudah kami kirim ke email kamu, lho!
+            </span>
+          </div>
         </div>
       </div>
     </div>
