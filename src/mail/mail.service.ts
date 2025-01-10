@@ -10,13 +10,14 @@ export class MailService {
 
     async sendResultTest(dto: SendResultTestDto) {
         const { name, naration, suggestMajor, email } = dto;
+        const formatedNaration = naration.replaceAll("\n", "<br/>");
         return await this.mailerService.sendMail({
             to: email,
             subject: 'Hasil Tes Minat Bakat Telkom University',
             template: './result-test',
             context: {
                 name,
-                naration,
+                naration: formatedNaration,
                 suggestMajor,
             },
         });
