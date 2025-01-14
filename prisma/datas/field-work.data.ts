@@ -1,16 +1,16 @@
 import { IFieldWork } from "../interfaces/field-work.interface";
 
 export const fieldWorkData: IFieldWork[] = [
-    { name: "Bisnis" },
-    { name: "Desain" },
-    { name: "Informasi" },
-    { name: "Kesehatan" },
-    { name: "Komputer" },
-    { name: "Komunikasi" },
-    { name: "Manajemen" },
-    { name: "Pariwisata" },
-    { name: "Seni" },
-    { name: "Sosial" },
-    { name: "Teknik" },
-    { name: "Teknologi Informasi" },
-]
+    { id: 'FW-01', name: "Bisnis" },
+    { id: 'FW-02', name: "Desain" },
+    { id: 'FW-03', name: "Informasi" },
+    { id: 'FW-04', name: "Kesehatan" },
+    { id: 'FW-05', name: "Komputer" },
+    { id: 'FW-06', name: "Komunikasi" },
+    { id: 'FW-07', name: "Manajemen" },
+    { id: 'FW-08', name: "Pariwisata" },
+    { id: 'FW-09', name: "Seni" },
+    { id: 'FW-10', name: "Sosial" },
+    { id: 'FW-11', name: "Teknik" },
+    { id: 'FW-12', name: "Teknologi Informasi" },
+];
