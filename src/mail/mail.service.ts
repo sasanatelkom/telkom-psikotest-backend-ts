@@ -15,6 +15,7 @@ export class MailService {
             to: email,
             subject: 'Hasil Tes Minat Bakat Telkom University',
             template: './result-test',
+            from: `Minat Bakat Telkom University <minatbakat@smbbtelkom.ac.id>`,
             context: {
                 name,
                 naration: formatedNaration,
